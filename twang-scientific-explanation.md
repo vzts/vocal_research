@@ -1,10 +1,12 @@
 # 트왱(Twang)
 
-2025년까지의 보컬 과학 — 지각, 음향, 생리, 모델링, 교육, 임상을 한자리에 모은 정리.
+2026년 8월 기준의 보컬 과학 — 지각, 음향, 생리, 모델링, 교육, 임상을 한자리에 모은 정리.
 
 트왱은 특정 근육 하나를 조이거나, 하나의 고정된 해부 자세를 취하는 기술이 아니다. 밝고 선명하고 놋쇠/금속성으로 두드러지게 들리는 **음질**이며, 그 음질을 만들기 위해 성대 음원과 성도 필터를 함께 조절하는 **발성 전략**이기도 하다.
 
 지금 연구에서 가장 반복되는 생리 경향은 **에피후두관·AES 협착과 성도의 메가폰형 재구성**이고, 가장 반복되는 음향 경향은 **F1·F2 상승과 보다 조밀한 formant 구조**다. 어느 하나도 모든 트왱의 필요충분조건으로 확립되지는 않았고, 가수마다 조절의 위치·방향·정도가 다르다.
+
+트왱을 과제명으로 찍은 사람 연구는 2024년 MRI·지각 논문과 2025년 경제성(QOCR) 파일럿이 현재 최신 묶음이다. 2025년 4월부터 2026년 중반 사이에는 그 라벨 없이 AES·가성대·에피후두를 다룬 3차원 유동 모델과, Estill 훈련 청자가 AES Wide/Narrow를 소리만으로 식별하는 지각 실험이 나왔다. 3D 모델은 AES의 주 효과를 필터 쪽에 두고, 지각 실험은 AES Narrow를 훈련된 귀가 듣되 성대 두께 지각과 묶일 수 있음을 보여 준다. 둘 다 함께 넣었다. Complete Vocal Technique의 metal/density는 트왱이 아니다. 다만 밝은·금속성 음질에서 효율과 경제성이 갈라질 수 있고, 2–5 kHz가 더 앞으로 방사될 수 있다는 2026년 소표본 자료라 구분해서 적는다.
 
 **근거 표시**
 
@@ -126,7 +128,7 @@ Fant의 기본 모형은 다음이다.
 
 의 곱에 가깝다.
 
-### 4.2 비선형 source–filter 결합 **확립(이론) / 예비(트왱 실측)**
+### 4.2 비선형 source–filter 결합 **확립(이론) / 예비(트왱 실측) / 음원 효과는 축소(2023–2025 3D 모델)**
 
 선형 이론은 음원이 성도와 독립적으로 진동한다고 가정한다. Titze의 비선형 결합 이론은 그 가정이 항상 참은 아니라고 본다.
 
@@ -138,6 +140,21 @@ Fant의 기본 모형은 다음이다.
 - 모델에서는 이것이 **발성역치압 저하** 및 vocal economy 향상으로 이어질 수 있다.
 
 에피후두관을 좁히는 것은 필터만 바꾸는 일이 아니라, **음원 자체에 되먹임할 수 있는 일**이다. 다만 이는 물리 모델이 허용하는 기전이다. 실제 가수가 그 이득을 항상 취하는지는 별 문제다(10절).
+
+### 4.2.1 3차원 모델: AES의 주 효과는 필터 **예비(모델)**
+
+Titze 계열의 관성 부하·MFDR 이득은 주로 1차원 음향 결합에서 나온 예측이다. UCLA Zhang 실험실의 3차원 모델(2023, 2025)은 그 음원 되먹임을 더 좁게 읽는다.
+
+**Zhang (2023).** 성도 여러 위치의 협착을 3차원 발성 모델에서 비교했다. 에피후두 협착은 정규화 MFDR을 약간 키울 수 있으나, 극단적 협착에서는 성문 기류 진폭이 줄어 음원 강도(성문 SPL)는 대체로 감소했다. 저자 해석: 에피후두 협착이 성대 충돌 위험을 줄이는 경로가 있다면, 성문 안에서 충돌을 직접 약하게 만들어서라기보다 **전달함수(formant 구조)가 좋아져 같은 소리를 더 낮은 성문하압으로 내는 효율 경로**에 가깝다.
+
+**Yoshinaga & Zhang (2025).** 3차원 압축성 유동 + 2질량 성대 모델. 가성대 내전과 AES 협착을 따로 바꿨다.
+
+- 보통 범위의 가성대·AES 협착이 음원과 성대 접촉압에 미치는 영향은 **성문하압 변화보다 작다**.
+- **강한 가성대 내전**(간극 약 3 mm)만 예외적으로 음원을 키웠다. 제트를 **내외측(ML)** 으로 조이면 제트가 성문 위에서 더 오래 유지되고, 성문 저항이 줄며 성문 통과 압력이 커진다.
+- AES 협착은 제트를 주로 **전후(AP)** 로 조이므로, 같은 모델에서 음원 강도에 거의 영향을 주지 않았다. 이 모델의 AES는 AP 방향으로 구현된 것이다. 사람 트왱 MRI에서는 AES가 ML로도 줄어든다(5절). 모델의 AP/ML 구분을 사람 AES의 유일한 방향으로 읽으면 안 된다.
+- 결론: 에피후두 조절의 주 효과는 음원이 아니라 **성도 전달함수**다.
+
+트왱 문헌의 AES를 “성대를 세게 붙이는 일”과 같게 보는 그림은, 이 모델들과 잘 맞지 않는다. AES는 여전히 formant와 스펙트럼을 바꿀 수 있다. 음원 되먹임은 **가능할 뿐**이고, 2025년 3D 유동 기준으로는 AES 단독의 주 경로가 아니다. 강한 가성대 내전은 다른 이야기이며, 과기능·거친 음질 쪽과 더 자주 연결된다(12.3절).
 
 ### 4.3 메가폰형 성도 **반복 관찰**
 
@@ -175,6 +192,8 @@ Story, Titze, Hoffman (2001)의 MRI 면적함수에서는 트왱 모음이 정�
 
 AES 협착을 가성대 조임이나 목 전체 긴장과 같은 것으로 보면 안 된다. Yanagisawa 등이 인용하는 Garcia(1855)는 이미 후두 위 협착이 소리의 광채에 기여한다고 관찰했다.
 
+AES와 가성대는 같은 층의 협착이 아니다. 2025년 3D 유동 모델에서 AES는 주로 AP, 가성대는 주로 ML로 제트를 조였고, 음원 효과도 갈렸다(4.2.1절). MRI에서 트왱의 AES 면적이 ML로 줄어든 것(Jelinger et al., 2024)을, 가성대를 강하게 붙인 것과 같은 사건으로 읽으면 안 된다. 위치와 방향이 다르다.
+
 ### 5.2 AES 협착은 트왱에서 반복된다 — 트왱만의 것은 아니다 **반복 관찰**
 
 **Yanagisawa, Estill, Kmucha, Leder (1989).** 전문 가수 5명. speech, falsetto, sob, twang, belting, opera. 굴곡형 광섬유 후두경에서 twang, belting, opera 모두 AES 협착이 있었다. 연구진은 이 협착을 “ringing” 음질 및 스펙트로그램상의 고주파 에너지와 연결했다.
@@ -187,7 +206,7 @@ AES 협착을 가성대 조임이나 목 전체 긴장과 같은 것으로 보�
 
 **Perta, Bae, Obert (2021).** 전문 보컬 2명, 앙와위 MRI, /i/, speech vs twang. 트왱에서 인두 단면이 줄었고 **측방(lateral) 협착이 뚜렷**했다. 후두는 약간 상승, **비인두 통로(VP port)는 닫혀 있었다.**
 
-**Jelinger & Bae (2024).** 전문 보컬 5명, 앙와위 MRI, /i/ 지속, speech vs twang.
+**Jelinger, Perta, Lee, Wiksten, Bae (2024).** 전문 보컬 5명, 앙와위 MRI, /i/ 지속, speech vs twang.
 
 | 위치 | 결과 |
 |---|---|
@@ -208,7 +227,7 @@ AES/에피후두 협착은 트왱에서 반복 관찰되는 중요한 생리 특
 
 ### 6.1 구인두 **반복 관찰**
 
-Perta (2021, n=2)와 Jelinger (2024, n=5) 모두 구인두 면적 감소 경향을 본다. Jelinger 표본에서는 5명 중 1명이 감소하지 않았고, AP/ML 패턴도 달랐다.
+Perta et al. (2021, n=2)와 Jelinger et al. (2024, n=5) 모두 구인두 면적 감소 경향을 본다. Jelinger 표본에서는 5명 중 1명이 감소하지 않았고, AP/ML 패턴도 달랐다.
 
 트왱에서는 AES만이 아니라 구인두를 포함한 성도의 일부가 좁아지는 양상이 자주 나타난다. 위치·방향·정도는 개인차가 크다. “트왱은 인두를 좁히는 발성이다”는 방향은 맞을 수 있으나, 정의로는 너무 굵다.
 
@@ -219,7 +238,7 @@ Perta (2021, n=2)와 Jelinger (2024, n=5) 모두 구인두 면적 감소 경향�
 - Story, Titze, Hoffman (2001): 트왱 모음에서 성도 단축
 - Titze et al. (2003): 합성에서 성도 단축이 트왱 지각을 높임
 - Perta (2021): 약간 상승한 후두
-- Jelinger (2024): 통계적으로 유의하지는 않았으나 5명 중 4명에서 트왱 시 후두가 더 높음. 앙와위가 상승을 눌렀을 가능성
+- Jelinger et al. (2024): 통계적으로 유의하지는 않았으나 5명 중 4명에서 트왱 시 후두가 더 높음. 앙와위가 상승을 눌렀을 가능성
 - Saldías et al. (2021): 큰소리 트왱유사에서 후두 상승으로 성도가 짧아짐
 - Saldías O'Hrens et al. (2024): F1·F2 상승을 조음 + 후두 높이의 후보 설명으로 제시
 
@@ -289,6 +308,12 @@ twang vs neutral, /pæ/, 여러 음높이, 강약 변화.
 
 정리하면, 트왱 또는 트왱유사 조건에서 음원이 더 닫히거나 더 pressed로 기울 수 있다. 합성 연구에서는 OQ 감소가 트왱 지각에 기여한다. 그러나 모든 트왱에서 성대를 세게 붙여야 한다거나, 큰소리 가창에서 접촉률이 반드시 더 올라간다고 말할 수는 없다.
 
+### 7.5 모델: AES를 좁힌다고 음원이 커지지는 않는다 **예비(모델)**
+
+4.2.1절의 2023·2025 3D 모델은 7절의 사람 자료와 같은 방향을 가리킨다. 합성에서는 OQ 감소가 트왱 지각에 기여하고, 일부 실측에서는 닫힘/눌림 쪽으로 기울 수 있다. 그러나 AES 협착 자체가 성문 음원을 세게 만든다고 보기는 어렵다. 큰소리 CCM 10명에서 EGG 접촉률 차이가 없었던 2025 파일럿과도 모순되지 않는다.
+
+**Zhang & Steinhauer (2026)** 은 음원을 직접 측정하지 않았다. 다만 Estill 훈련 청자가 AES Narrow를 Stiff 성대 조건에서 Thin 쪽으로 듣는 경향이 있었다(8.4절). 필터가 음원 범주 지각을 밀어 옮길 수 있다는 뜻이지, AES가 성대를 더 붙였다는 증거가 아니다. 이 연구에는 동시 생리 측정이 없다.
+
 ---
 
 ## 8. 음향과 지각
@@ -315,11 +340,12 @@ Story (2001)의 “트왱에서 F1·F2가 벌어진다”는 yawn(F1·F2가 모�
 
 ### 8.2 3 kHz, 2–4 kHz, singer’s formant
 
-“트왱 = 2–4 kHz 증폭”은 세 갈래 문헌이 한데 엉킨 문장이다.
+“트왱 = 2–4 kHz 증폭”은 여러 갈래 문헌이 한데 엉킨 문장이다.
 
 1. **singer’s formant cluster** (Sundberg, 1974 이후): 주로 남성 클래식 가창에서 F3–F5가 2.5–3.5 kHz 근처에 모여, 오케스트라(에너지가 대략 500 Hz 부근에 많은) 위로 뚫고 나간다. 조건은 에피후두관이 좁고 인두가 상대적으로 넓음(면적비 약 1:6 모형), 종종 낮은 후두.
 2. **Yanagisawa et al. (1989):** AES 협착을 ringing 및 그 대역 에너지와 연결하고, twang을 그 바구니에 넣음.
 3. **Saldías et al. (2021):** 큰소리 트왱유사에서 약 3 kHz 봉우리는 있었으나, 인두/에피후두 비 때문에 F3–F5 clustering은 없었다. 3 kHz 에너지는 주로 F4 쪽 변화로 설명됐다.
+4. **Yoshinaga & Zhang (2025):** 전달함수 계산에서 singer’s formant / ringing에 가까운 고주파 봉우리는 AES만으로는 부족하고, 가성대·전정강·AES가 함께 좁아질 때 커졌다. AES 면적 감소와 singer’s formant를 같은 사건으로 묶지 말 것.
 
 2024 지각 연구에서는 3 kHz 초과와 F4·F5가 트왱 지각과 약하게만 상관했다. 트왱다움의 주 상관은 F1·F2와 1–3 kHz, 그리고 F1–F3 간격 축소였다.
 
@@ -338,6 +364,17 @@ Story (2001)의 “트왱에서 F1·F2가 벌어진다”는 yawn(F1·F2가 모�
 
 트왱은 성대와 성도 조절을 통해 음원 스펙트럼과 formant 구조를 바꿔, 밝고 선명하고 두드러진 음질에 기여할 수 있다. 그 두드러짐의 마지막 단은 귀의 주파수 민감도와 청취 환경이다.
 
+### 8.4 AES Wide/Narrow는 훈련된 귀에 들리는가 **예비**
+
+**Zhang & Steinhauer (2026).** Estill 숙련 화자 2명이 지정된 Figure 조합으로 /pi/, /pa/를 반복 발성. Estill Mentor/Course Instructor 청자 10명이 소리만 듣고 TVF:Body-Cover, 갑상·윤상 연골, 가성대, AES 옵션을 고름. 후두 생리는 동시에 찍지 않았고, 공기역학 마스크를 쓴 녹음이다.
+
+- AES Wide / Narrow 재인율(recall)은 약 **83% / 72%**, 정밀도도 같은 수준. 우연(50%)을 분명히 웃돈다.
+- 가성대 Mid vs Retract는 잘 안 갈린다(재인율 39%, 47%). Constrict vs 열린 상태는 잘 갈린다. 가성대는 지각상 **조임 / 비조임**에 가깝다.
+- AES Narrow + Stiff는 Thin-Narrow로 오인되는 경우가 많다(Stiff-Narrow 재인율 22%). Slack-Narrow는 Slack-Wide로 들리는 경향.
+- 전체 Figure 일치율은 약 68%(가성대 Mid/Retract를 Open으로 합치면 약 75%). 청자 간 ICC는 중간.
+
+트왱 음질 평점이 아니다. Estill 생리 옵션 식별이다. 그래도 트왱 교육에서 AES를 독립 스위치처럼 쓰는 습관에는 제약이 된다. 훈련된 귀는 AES Wide/Narrow를 우연 이상으로 듣는다. 동시에 AES Narrow는 Stiff 음원을 Thin 쪽으로 들리게 밀어, 성대 두께 지각과 **결합**될 수 있다. 생리가 실제로 그렇게 묶였는지는 이 논문만으로 알 수 없다.
+
 ---
 
 ## 9. 전달력, SPL, projection
@@ -355,6 +392,8 @@ Story (2001)의 “트왱에서 F1·F2가 벌어진다”는 yawn(F1·F2가 모�
 
 소리가 얼굴 앞에서 나는 것이 아니다. 음원은 성문에 있고, 필터는 성도다. “앞으로 나가는 느낌”은 고주파가 잘 들리고, 입 방사와 골전도·안면 진동이 겹쳐 생기는 지각인 경우가 많다.
 
+**Frič & Aaen (2026).** CVT 가수 2명, 무향실 반구 마이크 배열. Overdrive/Edge의 full metal·full density에서 **2–5 kHz 전방 방사**가 커지는 경향이 있었고, 그 차이가 SPL이나 \(F_0\) 만으로는 설명되지 않았다. 고전적 발성은 0–2 kHz에서 더 넓게 퍼지는 경향. n = 2, 가수 특이적, **트왱 과제가 아니다.** “앞으로 보낸다”를 지향성(directivity)으로 읽을 여지를 열어 주는 예비 자료일 뿐이다. 트왱이 어떤 방에서든 더 멀리 간다는 증거가 아니다.
+
 ---
 
 ## 10. 힘, 효율, 경제성
@@ -366,9 +405,21 @@ Story (2001)의 “트왱에서 F1·F2가 벌어진다”는 yawn(F1·F2가 모�
 - **effort:** 가수 또는 호흡·후두 근육이 느끼는/쓰는 노력. 위 둘과 같지 않다.
 - **성문하압:** 폐에서 미는 압력. 노력의 한 지표일 수는 있으나 노력 전체가 아니다.
 
-모델이 말하는 이득은 주로 **에피후두 협착 → 관성 부하 → 펄스 skew → MFDR 증가 → 같은 충돌로 더 큰 고주파 출력**이다.
+모델이 말하는 이득은 주로 **에피후두 협착 → 관성 부하 → 펄스 skew → MFDR 증가 → 같은 충돌로 더 큰 고주파 출력**이다. 2023–2025 3D 모델은 이 사슬의 앞부분(음원 강화)을 약하게, 뒷부분의 효율 경로(같은 SPL을 더 낮은 성문하압으로)를 더 그럴듯하게 읽는다.
 
-### 10.2 사람 데이터 **예비**
+### 10.2 모델: 같은 성문하압 vs 같은 목표 SPL **예비(모델)**
+
+**Zhang (2021).** 3차원 성대 모델. 에피후두 면적, 성대 수직 두께, 초기 성문각, 성문하압을 바꿨다.
+
+- **성문하압을 고정**하면, 에피후두 협착이 최대 접촉압을 올릴 수도 내릴 수도 있다. 두께·성문각·압력의 상호작용이다.
+- **목표 SPL을 고정**하면, 에피후두 협착이 효율을 높여 **필요한 성문하압이 줄고**, 그에 따라 최대 접촉압도 줄어드는 경향이다.
+- 접촉압과 호흡 노력을 함께 낮추는 조건으로 저자가 고른 것은 에피후두 협착 + 작은 초기 성문각 + 중간 두께였다.
+
+Zhang (2023)과 Yoshinaga & Zhang (2025)은 이 이득의 경로를 더 좁힌다. 효율 상승의 주된 몫은 음원을 키우는 일이 아니라 **필터(전달함수)** 쪽이고, AES/가성대 협착이 접촉압에 미치는 직접 효과는 성문하압 변화보다 작다.
+
+모델이 허락하는 문장은 이것이다. 에피후두를 좁힌 뒤 **같은 크기를 더 낮은 성문하압으로** 내면 경제성이 좋아질 수 있다. 좁혀 놓고 호흡을 더 세게 밀면, 2021 모델에서도 그 이득은 사라질 수 있다.
+
+### 10.3 사람 데이터 **예비**
 
 **Saldías O'Hrens et al. (2025).** CCM 10명, QOCR(SPL과 \(CQ_{EGG}\) 등으로 경제성을 간접 추정).
 
@@ -380,9 +431,16 @@ Story (2001)의 “트왱에서 F1·F2가 벌어진다”는 yawn(F1·F2가 모�
 
 모델의 음향적 이점 가능성 ≠ 실제 가수의 생리적 노력 감소. 트왱을 쓰면 항상 힘이 덜 들고 공기가 덜 필요하다고 말할 근거는 없다. 반대로 “트왱은 비효율적이다”도 10명 파일럿으로 확정할 수 없다.
 
-실무적으로는, 트왱 모양만 만들고 호흡을 더 세게 밀어 버리면 이론상의 경제 이득을 스스로 지울 수 있다.
+실무적으로는, 트왱 모양만 만들고 호흡을 더 세게 밀어 버리면 이론상의 경제 이득을 스스로 지울 수 있다. 2021 모델과 같은 문장이다.
 
-### 10.3 임상 **예비**
+**Leppävuori, Ikävalko, Aaen, Sadolin, Alku, Laukkanen (2026).** CVT 가수 2명. metal/density를 바꾼 발성. **트왱 과제가 아니다.**
+
+- metallic은 nonmetallic보다 SPL, 성문하압, 성문 저항, \(CQ_{EGG}\), **vocal efficiency가 높고**, 기류와 **QOCR는 낮았다**. 긴장(strain) 평점도 더 높았다.
+- reduced density는 fuller density보다 SPL·압력·효율·CQ가 낮고 QOCR는 높은 쪽(경계, p = 0.055)이었다.
+
+밝은·금속성 음질이 **에너지 변환율(효율)은 올리고, 접촉 대비 출력(경제성)은 내릴 수** 있다. 효율 ≠ 경제성 ≠ “힘이 덜 든다.” 2025년 트왱유사 QOCR 파일럿이 경제성 증가를 못 본 것과, 이 2026년 metallic 결과가 경제성을 낮춘 것은 같은 음질이 아니라도 같은 경고를 준다. 스펙트럼이 밝아진 것만으로 위생 이득을 단정하지 말 것.
+
+### 10.4 임상 **예비**
 
 **Lombard & Steinhauer (2007).** 저음량(hypophonic) 음성 6명. 트왱 치료를 필터 조작으로 보고 SPL, 기류, VHI 등이 개선됐다. ASHA 포털도 저음량 음성의 한 기법으로 적는다.
 
@@ -403,7 +461,7 @@ Estill 모형도 Oral Twang(AES 좁힘 + 연구개 높음)과 Nasal Twang(밝기
 
 ### 11.2 MRI에서 연구개는 올라가 있었다 **반복 관찰**
 
-Perta (2021)와 Jelinger 자료에서 트왱 과제 동안 VP port가 닫혀 있고 연구개가 올라가 있었다. 비교 과제인 구강 모음 /i/에서도 연구개가 올라가는 것은 정상이므로, 이것을 트왱 전용 제스처로 읽으면 안 된다. 요점은 **그 표본의 트왱 음색이 비강을 열지 않고도 만들어졌다**는 것이다.
+Perta et al. (2021)와 Jelinger et al. (2024) 자료에서 트왱 과제 동안 VP port가 닫혀 있고 연구개가 올라가 있었다. 비교 과제인 구강 모음 /i/에서도 연구개가 올라가는 것은 정상이므로, 이것을 트왱 전용 제스처로 읽으면 안 된다. 요점은 **그 표본의 트왱 음색이 비강을 열지 않고도 만들어졌다**는 것이다.
 
 정리:
 
@@ -450,7 +508,7 @@ ring은 밝기(twang)와 동의어가 아니다. 넓은 인두 위의 에피후�
 ### 12.3 트왱 ≠ 과기능적 조임
 
 - **AES 협착:** ringing/twang 문헌의 후보
-- **가성대 내전:** 과기능, harsh, muscle tension dysphonia 쪽과 더 자주 연결
+- **가성대 내전:** 과기능, harsh, muscle tension dysphonia 쪽과 더 자주 연결. Yoshinaga & Zhang (2025)에서도 음원을 키운 것은 강한 가성대(ML) 내전이지 AES(AP) 협착이 아니었다.
 - **진성대 pressed phonation:** 음원 문제. 트왱에 동반될 수는 있으나 정의가 아님
 - **설골·후두 주변 전반 긴장:** “목 전체”
 
@@ -479,6 +537,7 @@ ring은 밝기(twang)와 동의어가 아니다. 넓은 인두 위의 에피후�
 5. `NAY`/`HEY`는 입구다. 그 소리를 모음·노래 문장으로 옮길 수 있어야 전략이 된 것이다.
 6. 큰소리를 위해 숨만 더 세게 밀지 않는다. 과보상이 이론상의 경제 이득을 지울 수 있다.
 7. 한 가수의 성공 제스처를 다른 가수에게 해부 법칙으로 복사하지 않는다.
+8. AES Narrow가 목표여도, 귀가 그 소리를 Stiff가 아닌 Thin으로 재분류할 수 있다(Zhang & Steinhauer, 2026). 성대 옵션과 AES를 귀로만 분리했다고 단정하지 않는다.
 
 ---
 
@@ -507,6 +566,8 @@ ring은 밝기(twang)와 동의어가 아니다. 넓은 인두 위의 에피후�
         ▼
 에피후두관 면적이 음향 부하(관성)를 바꿔
 음원 파형에 되먹임할 수 있다  ← 비선형 결합(가능할 뿐, 필수는 아님)
+                     2023–2025 3D 모델: AES의 음원 효과는 작고
+                     주 효과는 전달함수. 강한 가성대 내전은 예외.
         │
         ▼
 AES·인두·혀·턱·입술·후두·연구개가
@@ -551,7 +612,11 @@ formant가 움직인다
 - 후두가 약간 높아져 성도가 짧아지는 경향이 여러 자료에 있다.
 - 음원이 더 닫히는 방향은 합성·일부 실측에서 보이지만, 큰소리 CCM 10명에서는 EGG 접촉률 차이가 없었다.
 - 특정 조건에서 SPL·두드러짐이 커질 수 있다. 항상은 아니다.
-- 에피후두 협착이 관성 부하를 키워 음향적으로 유리할 수 있다(모델). 가수가 그 이득을 자동으로 취하지는 않는 듯하다.
+- 에피후두 협착이 관성 부하를 키워 음향적으로 유리할 수 있다(Titze 계열 모델). 가수가 그 이득을 자동으로 취하지는 않는 듯하다.
+- AES/에피후두 협착의 **주 효과는 필터(전달함수)** 쪽일 가능성이 커졌다(Zhang 2023, Yoshinaga & Zhang 2025). 음원 되먹임은 강한 가성대 ML 내전에서 더 잘 나타난다.
+- 목표 SPL을 고정한 모델에서는 에피후두 협착이 효율을 올려 접촉압을 낮출 수 있다(Zhang 2021). 성문하압을 같이 올리면 그 이득은 사라질 수 있다.
+- Estill 훈련 청자는 AES Wide/Narrow를 우연 이상으로 식별한다(Zhang & Steinhauer 2026). AES Narrow는 Stiff를 Thin 쪽으로 들리게 밀 수 있다. 동시 생리 측정은 없다.
+- 인접한 밝은·금속성 음질(CVT metallic, n=2)에서는 효율이 오르고 QOCR는 내릴 수 있다(Leppävuori et al. 2026). 트왱 데이터가 아니다.
 
 ### 아직 확정할 수 없는 것
 
@@ -564,6 +629,8 @@ formant가 움직인다
 - 모든 가수에게 적용되는 고정 twang configuration
 - 내외측 협착이 치료적으로 안전한지, 과기능의 표지인지
 - 큰소리 가창에서 vocal economy의 방향
+- AES 협착이 사람 가수에서 음원을 얼마나 바꾸는지 (3D 모델은 작다고 하고, 사람 동시 측정은 부족하다)
+- AES Narrow의 지각이 실제 AES 면적 감소와 얼마나 대응하는가
 
 ---
 
@@ -585,7 +652,7 @@ formant가 움직인다
 AES는 괄약 영역이다. 중요하지만 유일 정의가 아니고, 트왱 전용도 아니다.
 
 **트왱 = 성대를 세게 붙임**  
-음원 변화가 관찰될 수 있으나 필수조건으로 확립되지 않았다.
+음원 변화가 관찰될 수 있으나 필수조건으로 확립되지 않았다. 2025년 3D 모델에서 AES 협착의 음원 효과는 작다.
 
 **트왱 = 높은 후두 / 낮은 후두**  
 정의가 아니다. 다만 약간 높은 후두는 반복 관찰되는 기여 후보이다.
@@ -594,7 +661,7 @@ AES는 괄약 영역이다. 중요하지만 유일 정의가 아니고, 트왱 �
 일부 조건의 관찰이며, 최근 지각 자료의 주 상관은 F1·F2와 1–3 kHz 쪽이다.
 
 **트왱 = 무조건 적은 힘으로 큰 소리**  
-모델은 이득을 예측하고, 2025 파일럿은 경제성 증가를 확인하지 못했으며 공기압은 더 높았다.
+목표 SPL을 고정한 모델은 효율 이득을 예측한다. 2025 파일럿은 경제성 증가를 확인하지 못했으며 공기압은 더 높았다. 효율 ≠ 경제성(Leppävuori et al. 2026의 metallic 자료, 트왱 아님).
 
 **트왱 = 벨팅 = 오페라 ring**  
 부품을 공유할 수 있는 다른 음질·양식이다.
@@ -614,8 +681,11 @@ AES는 괄약 영역이다. 중요하지만 유일 정의가 아니고, 트왱 �
 6. **다른 모음을 한 냄비에.** /i/ MRI와 /a/ 음향을 같은 혀 자세로 읽으면 안 된다.
 7. **다른 지표를 한 냄비에.** \(Q_{closed}\)(기류) ≠ \(CQ_{EGG}\)(전기성문). SPL ≠ loudness ≠ projection.
 8. **다른 용어를 한 냄비에.** Estill oral twang, 방언 twang, twang-like CCM, CVT Edge.
-9. **선형 필터로만 읽기.** 에피후두 협착은 필터이자 음원 부하일 수 있다.
-10. **모델 이득을 사람 이득으로.** 관성 부하는 물리적으로 그럴듯하다. 가수가 호흡을 얼마나 밀어 버리는지가 그 이득을 결정한다.
+9. **선형 필터로만 읽기.** 에피후두 협착은 필터이자 음원 부하일 수 있다. 2023–2025 3D 모델은 부하(음원) 쪽을 작게, 필터 쪽을 크게 읽는다.
+10. **모델 이득을 사람 이득으로.** 관성 부하는 물리적으로 그럴듯하다. 가수가 호흡을 얼마나 밀어 버리는지가 그 이득을 결정한다. Zhang (2021)도 같은 성문하압과 같은 목표 SPL을 다른 이야기로 본다.
+11. **Titze의 음원 되먹임을 2025년 3D 모델과 같은 크기로.** 가능한 기전이다. AES의 주 효과는 필터 쪽으로 좁혀 읽는 편이 현재 모델과 맞다.
+12. **CVT metal을 트왱으로.** 밝은 강한 소리의 인접 자료일 뿐이다.
+13. **Estill Figure 식별을 트왱 지각으로.** AES Wide/Narrow를 듣는 것과 트왱다움 평점은 다른 과제다.
 
 가장 안전한 읽기 태도는 지각·음향·생리·교육 cue를 분리하고, 각 연구의 표본과 한계를 문장 옆에 붙이는 것이다.
 
@@ -635,9 +705,15 @@ AES는 괄약 영역이다. 중요하지만 유일 정의가 아니고, 트왱 �
 10. Sundberg, J., & Thalén, M. (2010). What is “Twang”? *Journal of Voice, 24*(6), 654–660. https://doi.org/10.1016/j.jvoice.2009.03.003
 11. Perta, K., Bae, Y., & Obert, K. (2021). A pilot investigation of twang quality using magnetic resonance imaging. *Logopedics Phoniatrics Vocology, 46*(2), 77–85. https://doi.org/10.1080/14015439.2020.1757147
 12. Saldías, M., Laukkanen, A.-M., Guzmán, M., Miranda, G., Stoney, J., Alku, P., & Sundberg, J. (2021). The vocal tract in loud twang-like singing while producing high and low pitches. *Journal of Voice, 35*(5), 807.e1–807.e23. https://doi.org/10.1016/j.jvoice.2020.02.005
-13. Jelinger, J., & Bae, Y. (2024). Oropharyngeal and aryepiglottic narrowing for twang: A magnetic resonance imaging study. *Journal of Voice.* https://doi.org/10.1016/j.jvoice.2024.06.014
-14. Saldías O'Hrens, M., Castro, C., Espinoza, V. M., Stoney, J., Quezada, C., & Laukkanen, A.-M. (2024). Spectral features related to the auditory perception of twang-like voices. *Logopedics Phoniatrics Vocology.* https://doi.org/10.1080/14015439.2024.2345373
+13. Jelinger, J., Perta, K., Lee, J., Wiksten, N., & Bae, Y. (2024). Oropharyngeal and aryepiglottic narrowing for twang: A magnetic resonance imaging study. *Journal of Voice.* https://doi.org/10.1016/j.jvoice.2024.06.014
+14. Saldías O'Hrens, M., Castro, C., Espinoza, V. M., Stoney, J., Quezada, C., & Laukkanen, A.-M. (2024). Spectral features related to the auditory perception of twang-like voices. *Logopedics Phoniatrics Vocology, 50*(2), 57–74. https://doi.org/10.1080/14015439.2024.2345373
 15. Saldías O'Hrens, M., Espinoza, V. M., Cruz, V., Garay, M., Reyes, J., Quezada, C., Cortez, P., Castro, C., Parra, J., & Laukkanen, A.-M. (2025). Vocal economy in contemporary commercial music singers: A pilot study on twang-like voices. *JASA Express Letters, 5*(9), 095205. https://doi.org/10.1121/10.0039036
+16. Zhang, Z. (2021). Interaction between epilaryngeal and laryngeal adjustments in regulating vocal fold contact pressure. *JASA Express Letters, 1*(2), 025201. https://doi.org/10.1121/10.0003393
+17. Zhang, Z. (2023). The influence of source–filter interaction on the voice source in a three-dimensional computational model of voice production. *Journal of the Acoustical Society of America, 154*(4), 2462–2475. https://doi.org/10.1121/10.0021879
+18. Yoshinaga, T., & Zhang, Z. (2025). Effects of false vocal fold adduction and aryepiglottic sphincter narrowing on the voice source in a three-dimensional voice production model. *Journal of the Acoustical Society of America, 157*(4), 2408–2421. https://doi.org/10.1121/10.0036359
+19. Zhang, Z., & Steinhauer, K. (2026). Perceiving physiology from the voice: Evidence for physiological coupling between laryngeal and epilaryngeal adjustments. *Journal of Voice.* Advance online publication. https://doi.org/10.1016/j.jvoice.2025.12.028
+20. Leppävuori, M., Ikävalko, T., Aaen, M., Sadolin, C., Alku, P., & Laukkanen, A.-M. (2026). “Metal” and “density” in phonation according to Complete Vocal Technique: Double-case study with special reference to vocal efficiency and economy. *Folia Phoniatrica et Logopaedica.* Advance online publication. https://doi.org/10.1159/000550742
+21. Frič, M., & Aaen, M. (2026). The influence of CVT metal and density on voice directivity patterns across two octaves: A double-case study. *Journal of Voice.* Advance online publication. https://doi.org/10.1016/j.jvoice.2025.12.037
 
 본문에서 추가로 참조한 문헌:
 
@@ -649,4 +725,4 @@ AES는 괄약 영역이다. 중요하지만 유일 정의가 아니고, 트왱 �
 
 ## 한 줄
 
-> 트왱은 AES 하나를 조이는 기술도, 비성도, 3 kHz를 만드는 기술도, 적은 힘의 마법도 아니다. **음원과 성도 — 특히 에피후두관을 포함한 메가폰형 재구성 — 가 맞물려 만드는, 밝고 선명하고 두드러진 음질/전략**이다. 반복되는 경향은 있으나 사람마다 선 굵기가 다르고, 단 하나의 해부 스위치는 아직 없다.
+> 트왱은 AES 하나를 조이는 기술도, 비성도, 3 kHz를 만드는 기술도, 적은 힘의 마법도 아니다. **음원과 성도 — 특히 에피후두관을 포함한 메가폰형 재구성 — 가 맞물려 만드는, 밝고 선명하고 두드러진 음질/전략**이다. 2023–2025 3D 모델은 AES의 주 효과를 음원이 아니라 필터 쪽에 둔다. 반복되는 경향은 있으나 사람마다 선 굵기가 다르고, 단 하나의 해부 스위치는 아직 없다.
