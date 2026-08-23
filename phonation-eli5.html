@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="발성을 뇌·호흡·성대·성도·감각 피드백의 전체 시스템으로 쉽고 자세히 설명하는 근거 중심 시각 가이드">
+  <title>발성 완전 설명서 — 목소리는 팀플레이다</title>
+  <style>
+    :root{--ink:#122a38;--muted:#5b6d75;--paper:#fffaf0;--card:#fffefb;--line:#d7e2df;--navy:#122a38;--teal:#24b9ae;--coral:#f2745f;--sun:#ffc94f;--violet:#806bc5;--green:#176457;--red:#8d4136;--shadow:0 18px 55px rgba(18,42,56,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;color:var(--ink);background:radial-gradient(circle at 5% 0,rgba(36,185,174,.13),transparent 30rem),radial-gradient(circle at 95% 8%,rgba(255,201,79,.17),transparent 30rem),var(--paper);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.7;word-break:keep-all}img{display:block;max-width:100%}a{color:inherit;text-underline-offset:3px}h1,h2,h3,p{margin-top:0}h1,h2,h3{letter-spacing:-.045em}ul,ol{padding-left:1.25rem}li+li{margin-top:7px}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.progress{position:fixed;z-index:90;inset:0 auto auto 0;width:0;height:5px;background:linear-gradient(90deg,var(--teal),var(--sun),var(--coral),var(--violet))}
+    .hero{position:relative;min-height:92svh;display:grid;align-items:center;overflow:hidden;border-bottom:2px solid var(--ink);background:#fbf3e4}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,250,240,.99),rgba(255,250,240,.95) 34%,rgba(255,250,240,.2) 68%,transparent)}.hero-content{position:relative;z-index:2;max-width:670px;padding:90px 0 70px}.badge{display:inline-flex;margin-bottom:22px;padding:8px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--sun);box-shadow:4px 4px 0 var(--ink);font-size:.86rem;font-weight:900}.hero h1{margin-bottom:24px;font-size:clamp(3.7rem,8.5vw,7.9rem);line-height:.88}.hero h1 span{display:block;color:var(--coral)}.lead{max-width:650px;margin-bottom:28px;font-size:clamp(1.15rem,2vw,1.47rem);font-weight:760}.lead mark{color:inherit;background:linear-gradient(transparent 58%,rgba(36,185,174,.35) 58%)}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:0 20px;border:2px solid var(--ink);border-radius:999px;background:var(--ink);color:white;text-decoration:none;font-weight:850}.button.alt{background:white;color:var(--ink)}.credit{position:absolute;z-index:3;right:18px;bottom:12px;padding:5px 9px;border-radius:7px;background:rgba(255,255,255,.88);font-size:.7rem;color:#53656d}
+    .nav{position:sticky;z-index:70;top:0;overflow-x:auto;border-bottom:1px solid var(--line);background:rgba(255,250,240,.94);backdrop-filter:blur(16px)}.nav .wrap{display:flex;gap:7px;padding:12px 0}.nav a{flex:0 0 auto;padding:7px 11px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:820}.nav a:hover,.nav a:focus{background:var(--ink);color:white}section{padding:clamp(70px,9vw,115px) 0}section:nth-of-type(even){background:rgba(255,255,255,.5)}.section-head{max-width:840px;margin-bottom:38px}.kicker{margin-bottom:7px;color:var(--coral);font-size:.8rem;font-weight:950;letter-spacing:.12em;text-transform:uppercase}h2{margin-bottom:14px;font-size:clamp(2.25rem,5vw,4.75rem);line-height:1.04}h3{margin-bottom:9px;font-size:clamp(1.25rem,2.1vw,1.7rem);line-height:1.22}.section-head>p:last-child{color:var(--muted);font-size:clamp(1.03rem,1.8vw,1.22rem)}
+    .answer{padding:clamp(30px,6vw,65px);border:3px solid var(--ink);border-radius:34px;background:var(--ink);color:white;box-shadow:12px 12px 0 var(--teal);text-align:center}.answer p{margin:0;font-size:clamp(1.45rem,3.4vw,2.95rem);font-weight:900;line-height:1.37}.answer em{color:var(--sun);font-style:normal}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:27px;align-items:center}.card{padding:23px;border:2px solid var(--ink);border-radius:21px;background:var(--card);box-shadow:5px 5px 0 rgba(18,42,56,.12)}.card p:last-child{margin:0;color:var(--muted)}.card.teal{box-shadow:6px 6px 0 var(--teal)}.card.coral{box-shadow:6px 6px 0 var(--coral)}.card.yellow{box-shadow:6px 6px 0 var(--sun)}.card.violet{box-shadow:6px 6px 0 var(--violet)}.mini{display:block;margin-bottom:9px;color:var(--coral);font-size:.72rem;font-weight:950;letter-spacing:.12em}.image-panel{overflow:hidden;margin:0;border:3px solid var(--ink);border-radius:28px;background:white;box-shadow:var(--shadow)}.image-panel img{width:100%;aspect-ratio:3/2;object-fit:cover}.image-panel figcaption{padding:12px 17px;color:var(--muted);background:white;font-size:.82rem}.easy,.caution,.health{margin-top:25px;padding:19px 21px;border-radius:17px}.easy{border-left:7px solid var(--sun);background:#fff6cf}.caution{border-left:7px solid var(--coral);background:#fff0ec}.health{border-left:7px solid var(--teal);background:#e6faf7}.easy b,.caution b,.health b{display:block;margin-bottom:5px}.legend{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0}.pill{display:inline-flex;padding:7px 11px;border-radius:999px;font-size:.79rem;font-weight:850}.solid{color:var(--green);background:#d9f7ef}.repeat{color:#735500;background:#fff0a5}.limited{color:var(--red);background:#ffe1d7}.open{color:#5e4477;background:#eee5f7}.mt{margin-top:26px}.mt2{margin-top:40px}
+    .flow{display:grid;gap:0;max-width:850px;margin:auto}.flow-item{position:relative;padding:20px 24px;border:2px solid var(--ink);border-radius:19px;background:white;text-align:center}.flow-item+.flow-item{margin-top:31px}.flow-item+.flow-item:before{content:"↓";position:absolute;top:-34px;left:calc(50% - 10px);font-size:1.5rem;font-weight:950}.flow-item b{display:block;font-size:1.12rem}.flow-item span{color:var(--muted);font-size:.91rem}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:white}table{width:100%;min-width:700px;border-collapse:collapse}th,td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eef4f2;font-size:.83rem}tbody tr:last-child td{border-bottom:0}.equation{display:grid;place-items:center;min-height:170px;margin:25px 0;padding:28px;border:2px solid var(--ink);border-radius:24px;background:linear-gradient(135deg,#e5faf7,#fff4d3);text-align:center}.equation strong{font-size:clamp(1.5rem,3.6vw,3.25rem)}.equation span{display:block;color:var(--muted);font-weight:720}.steps{display:grid;gap:13px;counter-reset:step}.step{counter-increment:step;display:grid;grid-template-columns:49px 1fr;gap:15px;padding:18px;border:1px solid var(--line);border-radius:18px;background:white}.step:before{content:counter(step);display:grid;width:45px;height:45px;place-items:center;border-radius:14px;background:var(--ink);color:white;font-weight:950}.step h3{margin:2px 0 3px;font-size:1.12rem}.step p{margin:0;color:var(--muted);font-size:.94rem}.quote{padding:26px;border-radius:22px;background:var(--ink);color:white;font-size:1.12rem;font-weight:740}.quote p:last-child{margin:0}.quote strong{color:var(--sun)}details{border:1px solid var(--line);border-radius:17px;background:white}details+details{margin-top:11px}summary{padding:17px 19px;cursor:pointer;font-weight:850}details>div{padding:0 19px 19px;color:#34464e}details[open] summary{color:var(--coral)}.refs{display:grid;gap:11px;padding:0;list-style:none;counter-reset:ref}.refs li{counter-increment:ref;display:grid;grid-template-columns:41px 1fr;gap:13px;padding:15px;border:1px solid var(--line);border-radius:15px;background:white}.refs li:before{content:counter(ref);display:grid;width:37px;height:37px;place-items:center;border-radius:50%;background:var(--sun);font-weight:950}.refs a{font-weight:800}.final{padding:clamp(42px,7vw,76px);border:3px solid var(--ink);border-radius:34px;background:linear-gradient(135deg,var(--teal),#147c82);color:white;box-shadow:12px 12px 0 var(--ink);text-align:center}.final p{max-width:820px;margin:0 auto;font-size:1.13rem}footer{padding:48px 0 75px;color:var(--muted);font-size:.87rem}footer .wrap{display:flex;justify-content:space-between;gap:30px}footer p{max-width:830px;margin:0}
+    @media(max-width:900px){.hero{min-height:780px;align-items:end}.hero>img{object-position:66% center}.shade{background:linear-gradient(0deg,rgba(255,250,240,.99),rgba(255,250,240,.94) 50%,rgba(255,250,240,.08) 85%)}.hero-content{padding-top:310px}.split,.grid-4{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr}}@media(max-width:640px){.wrap{width:min(100% - 24px,1160px)}.hero{min-height:720px}.hero-content{padding-top:290px}.hero h1{font-size:clamp(3.35rem,19vw,5.4rem)}.split,.grid-2,.grid-4{grid-template-columns:1fr}section{padding-block:67px}.answer{box-shadow:7px 7px 0 var(--teal)}footer .wrap{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body id="top">
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <img src="assets/phonation-eli5/hero.webp" alt="뇌, 폐, 후두, 성도, 귀가 하나의 되먹임 고리로 연결된 발성 시스템 생성 일러스트">
+    <div class="shade" aria-hidden="true"></div>
+    <div class="wrap"><div class="hero-content">
+      <span class="badge">아주 쉽게 · 근거는 꼼꼼하게</span>
+      <h1>발성<span>완전 설명서</span></h1>
+      <p class="lead">목소리는 목 하나가 만드는 소리가 아니에요. <mark>뇌·호흡·성대·성도·감각</mark>이 실시간으로 대화하는 팀플레이예요.</p>
+      <div class="actions"><a class="button" href="#quick">30초 요약</a><a class="button alt" href="phonation-scientific-explanation.md">과학 상세 문서</a></div>
+    </div></div>
+    <span class="credit">AI 생성 설명 이미지 · 실제 의료 영상 아님</span>
+  </header>
+
+  <nav class="nav" aria-label="문서 목차"><div class="wrap">
+    <a href="#quick">핵심</a><a href="#words">용어</a><a href="#system">전체 시스템</a><a href="#breath">호흡</a><a href="#folds">성대</a><a href="#controls">조절</a><a href="#filter">성도</a><a href="#brain">뇌</a><a href="#goals">목표</a><a href="#measure">측정</a><a href="#practice">훈련</a><a href="#health">건강</a><a href="#evidence">근거</a><a href="#reading">논문</a>
+  </div></nav>
+
+  <main>
+    <section id="quick"><div class="wrap">
+      <div class="answer"><p>발성은 “목에서 소리 내기”가 아니라<br><em>몸 전체가 목표 소리를 계속 예측하고 고치는 과정</em>이에요.</p></div>
+      <div class="grid-4 mt2">
+        <article class="card teal"><span class="mini">POWER</span><h3>호흡이 전원</h3><p>폐가 압력과 흐름을 제공하지만 음정 버튼은 아닙니다.</p></article>
+        <article class="card coral"><span class="mini">SOURCE</span><h3>성대가 음원</h3><p>공기와 탄성 조직이 만나 스스로 반복 진동합니다.</p></article>
+        <article class="card yellow"><span class="mini">FILTER</span><h3>성도가 조각가</h3><p>혀·턱·입술·인두가 배음을 골라 말과 음색을 만듭니다.</p></article>
+        <article class="card violet"><span class="mini">CONTROL</span><h3>뇌가 조율사</h3><p>예측, 청각과 몸의 감각으로 다음 시도를 수정합니다.</p></article>
+      </div>
+      <div class="easy"><b>5살도 이해하는 비유</b>발성은 리코더 하나보다 밴드에 가까워요. 드럼만 세게 친다고 좋은 합주가 되지 않듯, 숨만 많이 쓰거나 성대만 꽉 붙인다고 좋은 목소리가 되지 않습니다.</div>
+      <div class="legend"><span class="pill solid">확립 · 큰 그림이 단단함</span><span class="pill repeat">반복 관찰 · 범위 주의</span><span class="pill limited">제한적 · 작은 표본/특정 과제</span><span class="pill open">미결 · 정답 하나 없음</span></div>
+    </div></section>
+
+    <section id="words"><div class="wrap">
+      <div class="section-head"><p class="kicker">01 · 같은 말 속 다른 질문</p><h2>‘발성’을 네 조각으로 나눠 봐요</h2><p>무엇이 달라졌는지 말하려면 먼저 생성, 여과, 말 만들기, 훈련을 구분해야 합니다.</p></div>
+      <div class="table-wrap"><table><thead><tr><th>용어</th><th>쉬운 뜻</th><th>예시</th></tr></thead><tbody>
+        <tr><td><strong>발성 전체</strong></td><td>호흡–후두–성도–뇌를 합친 목소리 생산</td><td>말하기, 노래하기, 웃기</td></tr>
+        <tr><td><strong>성대발성</strong></td><td>성대 진동으로 유성 음원을 만드는 부분</td><td>/아/의 윙윙거리는 재료</td></tr>
+        <tr><td><strong>공명·조음</strong></td><td>성도 모양으로 음색과 모음·자음을 만드는 부분</td><td>같은 음정의 /아/와 /이/</td></tr>
+        <tr><td><strong>발성 테크닉</strong></td><td>특정 목표를 반복 가능하게 만드는 학습 전략</td><td>강연 투사, 벨트, 레가토</td></tr>
+      </tbody></table></div>
+      <div class="caution"><b>“발성이 좋아졌다”만으로는 부족해요</b>음정, 음량, 음질, 말 명료도, 노력감, 지속시간, 다음 날 회복 중 무엇이 달라졌는지 적어야 확인할 수 있습니다.</div>
+    </div></section>
+
+    <section id="system"><div class="wrap">
+      <div class="section-head"><p class="kicker">02 · 전체 지도를 먼저</p><h2>목소리는 직선이 아니라 닫힌 고리예요</h2><p>소리가 밖으로 나간 뒤 귀와 몸의 감각을 통해 다시 뇌로 돌아옵니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/whole-system.webp" loading="lazy" alt="뇌의 운동 명령에서 호흡, 후두, 성도, 소리, 귀의 피드백으로 이어지는 생성 모식도"><figcaption>하나의 부품이 다른 부품을 일방적으로 지휘하지 않습니다. 그림은 개념적 연결을 보여 주는 생성 모식도입니다.</figcaption></figure>
+      <div class="flow mt2">
+        <div class="flow-item"><b>뇌가 목표 소리를 예측하고 운동 명령을 준비한다</b><span>말뜻·음정·감정·장르에 따라 목표가 다름</span></div>
+        <div class="flow-item"><b>호흡이 압력과 흐름을, 성대가 주기적 음원을 만든다</b><span>둘은 저항과 에너지 전달로 서로 연결됨</span></div>
+        <div class="flow-item"><b>성도가 배음을 바꾸고 혀·턱·입술이 말을 완성한다</b><span>필터는 때로 성대 진동 안정성에도 되먹임</span></div>
+        <div class="flow-item"><b>귀와 몸의 감각이 실제 결과를 알려 준다</b><span>뇌는 예상과 차이를 이용해 다음 명령을 갱신</span></div>
+      </div>
+      <div class="easy"><b>한 곳을 바꾸면 다른 곳이 보상해요</b>‘목이 편해졌다’는 느낌은 성대 변화일 수도, 공명 덕분에 필요한 압력이 줄어든 결과일 수도, 새 동작에 익숙해진 결과일 수도 있습니다. 감각은 중요한 단서지만 해부학 카메라는 아닙니다.</div>
+    </div></section>
+
+    <section id="breath"><div class="wrap">
+      <div class="section-head"><p class="kicker">03 · 호흡과 서포트</p><h2>공기는 연료이지 지휘봉 하나가 아니에요</h2><p>압력, 흐름, 성문의 저항을 따로 보면 “숨을 많이”와 “잘 지지한다”의 차이가 보입니다.</p></div>
+      <div class="grid-3">
+        <article class="card teal"><span class="mini">PRESSURE</span><h3>성문하압</h3><p>성대 아래에서 미는 압력. 진동 시작과 음량 조건에 관여합니다.</p></article>
+        <article class="card yellow"><span class="mini">FLOW</span><h3>기류</h3><p>성문을 통과하는 공기. 많이 흐른다고 압력이 자동으로 큰 것은 아닙니다.</p></article>
+        <article class="card coral"><span class="mini">RESISTANCE</span><h3>성문 저항</h3><p>성대가 얼마나 벌어지고 접촉하는지가 압력–흐름 관계를 바꿉니다.</p></article>
+      </div>
+      <div class="equation"><div><strong>발성역치압 = 진동이 시작되는 최소 압력</strong><span>공연 압력 · 편안함 · 안전성 전체를 뜻하지 않음</span></div></div>
+      <div class="split mt">
+        <div class="quote"><p>“횡격막을 내려서 음을 받쳐라”</p><p><strong>→ 몸통 전체의 압력·흐름·시간 협응으로 번역하세요.</strong></p></div>
+        <div><h3>서포트는 부품 이름이 아니에요</h3><p>고전 가수 7명과 비훈련자 4명의 연구에서는 흉곽과 복부의 협응 차이와 큰 개인차가 함께 보였습니다. 이는 복부 기여가 무의미하다는 뜻도, 하나의 복식호흡이 보편 정답이라는 뜻도 아닙니다.</p><p><a href="https://doi.org/10.1371/journal.pone.0155084">Salomoni et al., 2016</a> · 작은 표본의 고전 과제</p></div>
+      </div>
+    </div></section>
+
+    <section id="folds"><div class="wrap">
+      <div class="section-head"><p class="kicker">04 · 성대의 자기진동</p><h2>뇌가 초당 수백 번 여닫는 게 아니에요</h2><p>가까워진 탄성 조직과 공기 흐름이 만나면, 에너지가 매 주기 조직으로 전달되어 진동이 유지됩니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/self-oscillation.webp" loading="lazy" alt="열린 탄성 리드, 압력이 쌓인 리드, 진동하며 소리를 내는 리드를 비교한 생성 비유"><figcaption>실제 성대가 아닌 탄성 리드 비유입니다. 공기–조직 상호작용과 층 구조의 방향성만 설명합니다.</figcaption></figure>
+      <div class="grid-4 mt">
+        <article class="card"><h3>1. 가까이</h3><p>후두근이 성대를 발성 가능한 위치로 모읍니다.</p></article>
+        <article class="card"><h3>2. 문턱</h3><p>아래 압력이 진동 시작 문턱을 넘습니다.</p></article>
+        <article class="card"><h3>3. 파동</h3><p>아래·위 가장자리가 시간차를 두고 움직입니다.</p></article>
+        <article class="card"><h3>4. 반복</h3><p>탄성·관성과 공기력이 에너지 교환을 이어 갑니다.</p></article>
+      </div>
+      <details class="mt"><summary>성대는 기타 줄과 같나요?</summary><div>긴장과 질량이 F0에 영향을 준다는 출발 비유는 쓸 만합니다. 하지만 성대는 여러 층의 살아 있는 조직이고, 공기 흐름 속에서 충돌·점막파·3차원 운동을 보입니다. 줄 공식 하나로 설명되지 않습니다.</div></details>
+      <details><summary>성대 접촉은 많을수록 좋은가요?</summary><div>아니요. 접촉이 너무 적으면 누기와 음원 약화가 생길 수 있고, 목표에 비해 과한 내전은 노력과 충돌 조건을 키울 수 있습니다. 필요한 정도는 음량·음질·장르에 따라 달라집니다.</div></details>
+    </div></section>
+
+    <section id="controls"><div class="wrap">
+      <div class="section-head"><p class="kicker">05 · 한 손잡이가 아니다</p><h2>음높이·음량·음질은 연결된 세 축이에요</h2><p>한 축을 바꾸면 호흡, 성대 접촉, 공명과 감각이 함께 변할 수 있습니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/control-axes.webp" loading="lazy" alt="파동 간격, 크기, 질감의 여러 조절이 서로 연결된 추상 음성 합성기 생성 일러스트"><figcaption>음성의 여러 제어축을 추상 합성기로 표현한 비유입니다. 실제 후두의 버튼 배치가 아닙니다.</figcaption></figure>
+      <div class="table-wrap mt"><table><thead><tr><th>바꾸고 싶은 것</th><th>관련될 수 있는 변수</th><th>피해야 할 등식</th></tr></thead><tbody>
+        <tr><td><strong>음높이</strong></td><td>성대의 유효 길이·강성·질량, CT/TA 등 후두근 협응</td><td>CT=고음 버튼, TA=저음 버튼</td></tr>
+        <tr><td><strong>음량</strong></td><td>압력, 접촉·폐쇄, 음원 스펙트럼, 성도 공명</td><td>큰 소리=공기를 무조건 많이</td></tr>
+        <tr><td><strong>기식·단단함</strong></td><td>성문 모양, 누기, 접촉 시간, 파형</td><td>접촉률=충돌력=안전성</td></tr>
+        <tr><td><strong>시작음</strong></td><td>내전과 압력 상승의 시간 관계, 자음, 목표 스타일</td><td>부드러운 시작만 항상 건강함</td></tr>
+      </tbody></table></div>
+      <div class="caution"><b>효율·편안함·안전도 서로 달라요</b>물리적 효율은 공기역학 파워가 음향 파워로 바뀐 비율입니다. 주관적 노력감, 장르적 성공, 점막 건강을 대신하지 않습니다.</div>
+    </div></section>
+
+    <section id="filter"><div class="wrap">
+      <div class="section-head"><p class="kicker">06 · 음원과 필터</p><h2>성대가 재료를 만들고 성도가 조각해요</h2><p>혀·턱·입술·인두·연구개가 바뀌면 같은 F0도 다른 모음과 음색으로 들립니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/source-filter.webp" loading="lazy" alt="여러 배음 리본이 성도를 지나 선택적으로 강조되어 나오는 생성 모식도"><figcaption>왼쪽의 음원 성분이 조절 가능한 성도를 지나 다른 출력으로 나오는 개념도입니다.</figcaption></figure>
+      <div class="grid-3 mt">
+        <article class="card teal"><span class="mini">HARMONICS</span><h3>배음</h3><p>주기적 음원에 포함된 F0의 정수배 성분입니다.</p></article>
+        <article class="card yellow"><span class="mini">RESONANCES</span><h3>성도 공명</h3><p>성도 모양이 가진 공진 특성입니다.</p></article>
+        <article class="card coral"><span class="mini">FORMANTS</span><h3>포먼트</h3><p>출력 스펙트럼에서 관찰되는 강조 대역입니다.</p></article>
+      </div>
+      <div class="easy"><b>필터도 음원에 말을 걸 수 있어요</b>8명이 입에 관을 연결하고 글라이드한 연구에서는 많은 F0 불안정이 배음–포먼트 교차와 맞물렸습니다. 비선형 결합의 사람 실험 단서지만 작은 표본·인위적 성도이므로 모든 브레이크를 설명하지는 않습니다. <a href="https://doi.org/10.1016/j.jvoice.2016.04.010">Maxfield et al., 2017</a></div>
+      <div class="caution"><b>‘앞에 걸기’는 위치 사진이 아니에요</b>얼굴의 진동감은 유용한 학습 단서입니다. 다만 실제로 변한 것이 성도 모양, 스펙트럼, 피부 진동, 노력감 중 무엇인지는 감각만으로 확정할 수 없습니다.</div>
+    </div></section>
+
+    <section id="brain"><div class="wrap">
+      <div class="section-head"><p class="kicker">07 · 예측하는 뇌</p><h2>먼저 계획하고, 들으며 고쳐요</h2><p>빠른 말과 노래는 피드포워드 예측과 감각 피드백을 함께 사용합니다.</p></div>
+      <div class="split">
+        <div class="steps">
+          <article class="step"><div><h3>목표와 내부 모델</h3><p>이전에 성공한 운동 명령과 예상 감각을 준비합니다.</p></div></article>
+          <article class="step"><div><h3>실행</h3><p>호흡·후두·성도의 여러 근육에 병렬 명령을 보냅니다.</p></div></article>
+          <article class="step"><div><h3>오차 탐지</h3><p>들리는 소리와 촉각·고유감각을 예상과 비교합니다.</p></div></article>
+          <article class="step"><div><h3>수정과 학습</h3><p>현재 발화와 다음 시도의 명령을 업데이트합니다.</p></div></article>
+        </div>
+        <div><div class="quote"><p>“근육 기억”은 근육 속 기억 상자가 아니에요.</p><p><strong>반복으로 정교해진 뇌–몸의 예측과 제어망</strong>에 가까워요.</p></div><p class="mt">40명의 변조 피드백 연구에서는 F0·포먼트 교란을 명시적으로 알아차리지 못해도 독립적 보상이 나타났습니다. 의식적 지시가 제어의 전부가 아니라는 뜻입니다. <a href="https://doi.org/10.3389/fpsyg.2020.01224">Xu et al., 2020</a></p></div>
+      </div>
+    </div></section>
+
+    <section id="goals"><div class="wrap">
+      <div class="section-head"><p class="kicker">08 · 같은 악기, 다른 성공</p><h2>좋은 목소리는 하나가 아니에요</h2><p>말뜻, 공간, 마이크, 반주, 음색 미학과 지속 시간이 바뀌면 최적 전략도 달라집니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/voice-diversity.webp" loading="lazy" alt="대화, 연기, 클래식, 팝, 뮤지컬의 다양한 목소리 목표를 보여 주는 생성 일러스트"><figcaption>여러 목소리 목표 사이에 우열은 없습니다. 인물과 파동은 과제 다양성을 위한 생성 표현입니다.</figcaption></figure>
+      <div class="grid-4 mt">
+        <article class="card"><h3>대화</h3><p>빠른 언어 전달, 억양, 연속 조음과 상황 적응이 중요합니다.</p></article>
+        <article class="card"><h3>강연·연기</h3><p>명료도, 투사, 감정과 장시간 부하 배분을 함께 봅니다.</p></article>
+        <article class="card"><h3>클래식 노래</h3><p>무증폭 투사, 음정, 긴 프레이즈와 양식적 음색을 조율합니다.</p></article>
+        <article class="card"><h3>팝·벨트</h3><p>마이크, 가사, 밝기, 기식·압착·왜곡을 미학적으로 선택합니다.</p></article>
+      </div>
+      <div class="health"><b>좋은 발성의 더 나은 정의</b>현재 목표를 비교적 정확하고 반복 가능하게 달성하고, 필요한 만큼의 노력으로 수행하며, 부하 뒤에 회복되는 전략입니다.</div>
+    </div></section>
+
+    <section id="measure"><div class="wrap">
+      <div class="section-head"><p class="kicker">09 · 연구 도구의 퍼즐</p><h2>한 기계가 목소리 전체를 보지 못해요</h2><p>마이크는 출력, EGG는 접촉의 간접 단서, 영상은 보이는 조직 운동의 일부를 보여 줍니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/research-methods.webp" loading="lazy" alt="마이크, 기류 마스크, EGG, 후두 영상, MRI, 청취와 자가평가가 퍼즐을 이루는 생성 일러스트"><figcaption>도구를 합쳐도 해석이 필요합니다. 화면 속 후두는 생성된 모식 이미지이며 실제 검사 자료가 아닙니다.</figcaption></figure>
+      <div class="table-wrap mt"><table><thead><tr><th>도구</th><th>잘 보는 것</th><th>혼자 말할 수 없는 것</th></tr></thead><tbody>
+        <tr><td><strong>마이크</strong></td><td>F0, 음압, 스펙트럼, 시간 변화</td><td>어느 근육이 원인인지, 병변 여부</td></tr>
+        <tr><td><strong>기류·압력</strong></td><td>호흡–성문 관계의 일부</td><td>점막 충돌과 주관적 편안함</td></tr>
+        <tr><td><strong>EGG</strong></td><td>목 표면 전도와 접촉 주기</td><td>충돌 압력·속도, 정확한 성문 모양</td></tr>
+        <tr><td><strong>초고속 영상</strong></td><td>연속 주기의 위쪽 운동</td><td>깊은 층 응력, 실제 공연 전체</td></tr>
+        <tr><td><strong>MRI·영상</strong></td><td>성도·구조의 3D 기하 일부</td><td>자연 자세의 빠른 모든 운동</td></tr>
+        <tr><td><strong>청취·자가평가</strong></td><td>들리는 질과 당사자의 기능 경험</td><td>조직 상태의 단독 진단</td></tr>
+      </tbody></table></div>
+      <div class="caution"><b>지속 /아/는 콘서트가 아니에요</b>46명의 EGG 연구에서 지속 모음과 연결 발화의 분류가 달랐습니다. 표본뿐 아니라 과제·음량·모음·자세·반복 횟수를 봐야 합니다. <a href="https://doi.org/10.1016/j.jvoice.2008.08.004">Baken et al., 2009</a></div>
+    </div></section>
+
+    <section id="practice"><div class="wrap">
+      <div class="section-head"><p class="kicker">10 · 훈련은 제어 학습</p><h2>작게 바꾸고, 확인하고, 회복해요</h2><p>즉시 쉬워진 느낌을 장기 학습·노래 전이·손상 예방과 구분합니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/practice-loop.webp" loading="lazy" alt="목표, 시도, 피드백, 한 변수 조정, 휴식과 재시도의 순환을 보여 주는 생성 일러스트"><figcaption>연습 고리는 결과 재현과 회복까지 포함합니다. 음표와 장치는 개념적 표현입니다.</figcaption></figure>
+      <div class="steps mt">
+        <article class="step"><div><h3>관찰 가능한 목표</h3><p>“좋은 발성” 대신 음역·모음·음량·길이·가사와 회복 조건을 적습니다.</p></div></article>
+        <article class="step"><div><h3>변수 한두 개</h3><p>음정, 모음, 음량, 시작음, 길이를 한꺼번에 바꾸지 않습니다.</p></div></article>
+        <article class="step"><div><h3>세 시점 확인</h3><p>연습 직후, 다음 날, 실제 곡·대화 속 전이를 따로 봅니다.</p></div></article>
+        <article class="step"><div><h3>난이도와 용량</h3><p>재현 가능한 범위에서 반복 수와 시간을 서서히 올립니다.</p></div></article>
+      </div>
+      <div class="grid-2 mt">
+        <article class="card teal"><h3>SOVT가 할 수 있는 일</h3><p>립트릴·허밍·빨대는 출구 조건을 바꿔 새로운 압력–흐름–진동 관계를 탐색하게 할 수 있습니다.</p></article>
+        <article class="card coral"><h3>SOVT가 보장하지 않는 일</h3><p>모든 성대의 자동 정렬, 모든 장르로의 전이, 개인별 최적 워밍업, 손상 예방을 보장하지 않습니다.</p></article>
+      </div>
+      <div class="easy"><b>연구 범위를 붙이기</b>20명 음성장애·피로 집단의 무작위시험에서 튜브 과제와 VFE가 환자보고 VHI를 개선했습니다. 임상 치료 근거이지 건강한 모든 가수의 최적 루틴 증명은 아닙니다. <a href="https://doi.org/10.1044/2015_JSLHR-S-13-0231">Kapsner-Smith et al., 2015</a></div>
+    </div></section>
+
+    <section id="health"><div class="wrap">
+      <div class="section-head"><p class="kicker">11 · 부하와 회복</p><h2>피로는 정보, 지속 증상은 평가 신호예요</h2><p>기술은 부담을 배분할 수 있지만 수면 부족, 감염, 누적 사용량과 질병을 무효화하지 않습니다.</p></div>
+      <figure class="image-panel"><img src="assets/phonation-eli5/health-recovery.webp" loading="lazy" alt="편한 발성, 피로 뒤 휴식, 회복 또는 지속 증상 시 전문 평가로 나뉘는 생성 일러스트"><figcaption>회복과 전문 평가의 의사결정을 단순화한 그림입니다. 진단을 대신하지 않습니다.</figcaption></figure>
+      <div class="grid-2 mt">
+        <article class="card teal"><span class="mini">RECOVERY</span><h3>부하를 줄이고 관찰</h3><ul><li>수분·수면과 음성 휴식 확보</li><li>소음 속 고함과 극단 음역 줄이기</li><li>다음 날 말소리와 음역 확인</li></ul></article>
+        <article class="card coral"><span class="mini">EVALUATION</span><h3>평가가 필요한 신호</h3><ul><li>통증, 호흡 곤란, 갑작스러운 변화</li><li>원래 되던 고음의 갑작스러운 소실</li><li>반복되거나 기능을 방해하는 쉰 목소리</li></ul></article>
+      </div>
+      <div class="health"><b>4주는 ‘무조건 기다리는 기간’이 아니에요</b>AAO-HNS는 심각 원인이 의심되면 즉시, 그렇지 않아도 쉰 목소리가 4주 안에 호전되지 않으면 후두경 검사 또는 의뢰를 권합니다. 호흡 곤란, 피 섞임, 심한 갑작스러운 소실 등은 즉시 지역 의료체계에서 판단받아야 합니다. <a href="https://www.entnet.org/resource/aao37-dysphonia-laryngeal-examination-2026/">AAO-HNS 2026</a></div>
+      <p class="mt"><a href="https://www.nidcd.nih.gov/health/taking-care-your-voice">NIDCD 음성 관리 지침</a>은 수분, 휴식, 쉰 상태·피곤한 상태에서 무리하지 않기, 소음과 음역 극단의 과사용 줄이기를 안내합니다.</p>
+    </div></section>
+
+    <section id="evidence"><div class="wrap">
+      <div class="section-head"><p class="kicker">12 · 합의와 빈칸</p><h2>아는 것과 모르는 것을 같이 말해요</h2><p>과학적 설명은 확신의 크기도 내용의 일부로 다룹니다.</p></div>
+      <div class="grid-2">
+        <article class="card teal"><span class="mini">ESTABLISHED</span><h3>큰 그림이 단단한 것</h3><ul><li>호흡–성대–성도–뇌는 결합 시스템이다.</li><li>성대는 공기와 탄성 조직의 자기유지 진동이다.</li><li>F0, 음량, 음질은 연결되지만 같은 변수가 아니다.</li><li>감각 피드백과 학습된 예측이 제어에 중요하다.</li></ul></article>
+        <article class="card violet"><span class="mini">OPEN</span><h3>아직 정답 하나가 없는 것</h3><ul><li>모든 몸·장르에 맞는 이상적 접촉률과 호흡 패턴</li><li>‘앞에 걸림’ 감각과 해부 변수의 일대일 대응</li><li>워밍업 즉시 효과의 장기 예방 효과</li><li>현장 음성 용량으로 개인 손상을 예측하는 공식</li></ul></article>
+      </div>
+      <div class="table-wrap mt"><table><thead><tr><th>자주 섞이는 것</th><th>분리해서 물을 질문</th></tr></thead><tbody>
+        <tr><td>효율 = 편안함 = 안전</td><td>공기–소리 비율인가, 노력감인가, 조직 상태인가?</td></tr>
+        <tr><td>접촉률 = 충돌력</td><td>EGG 전도 변화인가, 충돌 압력·속도인가?</td></tr>
+        <tr><td>즉시 변화 = 학습</td><td>다음 날 유지되고 실제 말·노래로 전이되는가?</td></tr>
+        <tr><td>집단 평균 = 나의 정상</td><td>범위와 겹침, 과제, 나이·해부·이력을 봤는가?</td></tr>
+      </tbody></table></div>
+    </div></section>
+
+    <section id="reading"><div class="wrap">
+      <div class="section-head"><p class="kicker">13 · 논문 읽는 법</p><h2>숫자보다 먼저 경계를 읽어요</h2><p>정확한 DOI가 있어도 표본과 과제를 넘어서면 부정확한 조언이 됩니다.</p></div>
+      <div class="steps">
+        <article class="step"><div><h3>대상</h3><p>건강인·환자·전문가·학생·동물·적출 후두·계산 모델을 구분합니다.</p></div></article>
+        <article class="step"><div><h3>과제</h3><p>지속 모음, 글라이드, 문장, 실제 곡의 차이를 확인합니다.</p></div></article>
+        <article class="step"><div><h3>측정</h3><p>직접 잰 것과 추정한 것, 측정할 수 없었던 것을 적습니다.</p></div></article>
+        <article class="step"><div><h3>시간</h3><p>한 번의 즉시 효과와 유지·전이·장기 건강을 분리합니다.</p></div></article>
+        <article class="step"><div><h3>범위</h3><p>평균뿐 아니라 개인차, 겹침, 무효 결과와 탈락자를 봅니다.</p></div></article>
+      </div>
+      <div class="quote mt2"><p>안전한 근거 문장:</p><p><strong>“누구 몇 명이, 어떤 과제를 했을 때, 무엇으로 잰 결과가 어떻게 달랐다. 다만 이 한계 때문에 여기까지는 말할 수 없다.”</strong></p></div>
+    </div></section>
+
+    <section id="references"><div class="wrap">
+      <div class="section-head"><p class="kicker">14 · 핵심 출처</p><h2>직접 확인할 수 있는 근거</h2><p>전체 참고문헌과 더 자세한 한계 평가는 과학 상세 문서에 있습니다.</p></div>
+      <ol class="refs">
+        <li><span><a href="https://www.nidcd.nih.gov/news/multimedia/how-does-human-body-produce-voice-and-speech-text-version">NIDCD · How Does the Human Body Produce Voice and Speech?</a> — 발성 전체 경로 공식 설명</span></li>
+        <li><span><a href="https://doi.org/10.1121/1.402928">Titze, 1992</a> — 발성역치압 이론</span></li>
+        <li><span><a href="https://doi.org/10.1371/journal.pone.0155084">Salomoni et al., 2016</a> — 고전 가수 7명·비훈련자 4명의 호흡 협응</span></li>
+        <li><span><a href="https://doi.org/10.1121/1.2832337">Titze, 2008</a> — 비선형 음원–필터 결합 이론</span></li>
+        <li><span><a href="https://doi.org/10.1016/j.jvoice.2016.04.010">Maxfield et al., 2017</a> — 성인 8명의 배음–포먼트 교차 실험</span></li>
+        <li><span><a href="https://doi.org/10.1093/cercor/bhaa182">Eichert et al., 2020</a> — 호흡을 통제한 후두 운동피질 지도</span></li>
+        <li><span><a href="https://doi.org/10.3389/fpsyg.2020.01224">Xu et al., 2020</a> — 성인 40명의 청각 피드백 보상</span></li>
+        <li><span><a href="https://doi.org/10.3390/bioengineering11050479">Ternström, 2024</a> — EGG 신호와 비접촉 발성의 측정 한계</span></li>
+        <li><span><a href="https://doi.org/10.1044/2015_JSLHR-S-13-0231">Kapsner-Smith et al., 2015</a> — 임상 집단 20명의 SOVT 무작위시험</span></li>
+        <li><span><a href="https://www.nidcd.nih.gov/health/taking-care-your-voice">NIDCD · Taking Care of Your Voice</a> — 음성 관리와 증상</span></li>
+      </ol>
+      <div class="final mt2"><h2>한 부품을 세게 쓰는 법보다<br>팀이 서로 잘 듣게 만드는 법</h2><p>느낌을 소중히 쓰되 해부학 사실로 단정하지 마세요. 목표를 정확히 정하고, 조건을 작게 바꾸고, 결과의 재현·전이·회복을 확인하세요. 통증과 지속적 변화는 훈련 문제가 아니라 평가가 필요한 신호일 수 있습니다.</p></div>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap"><p>이 문서는 교육용이며 개인 진단·치료를 대신하지 않습니다. 모든 삽화는 imagegen으로 생성한 개념 모식도입니다. 실제 의료 영상, 해부 사진, 연구 측정 데이터가 아닙니다.</p><p><a href="#top">맨 위로 ↑</a> · <a href="phonation-scientific-explanation.md">과학 상세 문서</a> · <a href="assets/phonation-eli5/PROMPTS.md">이미지 프롬프트</a></p></div></footer>
+  <script>
+    const bar=document.querySelector('.progress');
+    const paint=()=>{const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;bar.style.width=(max?100*h.scrollTop/max:0)+'%'};
+    addEventListener('scroll',paint,{passive:true});paint();
+  </script>
+</body>
+</html>
