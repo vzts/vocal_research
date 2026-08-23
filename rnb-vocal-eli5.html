@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="R&B 보컬을 역사, 그루브, 프레이징, 런, 음색, 화성, 스튜디오, 연습과 건강까지 쉽고 자세히 설명하는 근거 중심 시각 가이드">
+  <title>R&B 보컬 지도 — 런보다 먼저 음악을 듣는 법</title>
+  <style>
+    :root{--ink:#171225;--muted:#665f71;--paper:#fff8e9;--cream:#fffdf7;--plum:#3a133f;--night:#12152e;--berry:#a62b62;--amber:#f3a832;--teal:#198f91;--rose:#e46178;--line:#ded2c2;--shadow:0 20px 58px rgba(31,17,42,.13)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;color:var(--ink);background:radial-gradient(circle at 7% 2%,rgba(166,43,98,.1),transparent 28rem),radial-gradient(circle at 94% 6%,rgba(25,143,145,.1),transparent 26rem),var(--paper);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.72;word-break:keep-all}img{display:block;max-width:100%}a{color:inherit;text-underline-offset:3px}h1,h2,h3,p{margin-top:0}h1,h2,h3{letter-spacing:-.045em}ul,ol{padding-left:1.28rem}li+li{margin-top:7px}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}.progress{position:fixed;z-index:100;inset:0 auto auto 0;width:0;height:5px;background:linear-gradient(90deg,var(--amber),var(--rose),var(--teal))}
+    .hero{position:relative;min-height:94svh;display:grid;align-items:center;overflow:hidden;border-bottom:2px solid var(--ink);background:#f6ead4}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,248,233,.99),rgba(255,248,233,.95) 35%,rgba(255,248,233,.36) 57%,rgba(18,21,46,.12))}.hero-content{position:relative;z-index:2;max-width:690px;padding:90px 0 70px}.badge{display:inline-flex;margin-bottom:22px;padding:8px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--amber);box-shadow:4px 4px 0 var(--ink);font-size:.85rem;font-weight:950}.hero h1{margin-bottom:23px;font-size:clamp(3.5rem,8.7vw,8rem);line-height:.86}.hero h1 span{display:block;color:var(--berry)}.lead{max-width:660px;margin-bottom:27px;font-size:clamp(1.13rem,2vw,1.46rem);font-weight:770}.lead mark{color:inherit;background:linear-gradient(transparent 58%,rgba(25,143,145,.28) 58%)}.actions{display:flex;flex-wrap:wrap;gap:11px}.button{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:0 20px;border:2px solid var(--ink);border-radius:999px;background:var(--night);color:white;text-decoration:none;font-weight:880}.button.alt{background:white;color:var(--ink)}.credit{position:absolute;z-index:3;right:16px;bottom:11px;padding:5px 9px;border-radius:7px;background:rgba(255,255,255,.88);font-size:.69rem;color:#56505e}
+    .nav{position:sticky;z-index:80;top:0;overflow-x:auto;border-bottom:1px solid var(--line);background:rgba(255,248,233,.94);backdrop-filter:blur(15px)}.nav .wrap{display:flex;gap:6px;padding:11px 0}.nav a{flex:0 0 auto;padding:7px 11px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.8rem;font-weight:850}.nav a:hover,.nav a:focus{background:var(--night);color:white}section{padding:clamp(68px,9vw,112px) 0}section:nth-of-type(even){background:rgba(255,255,255,.5)}.section-head{max-width:880px;margin-bottom:38px}.kicker{margin-bottom:7px;color:var(--berry);font-size:.79rem;font-weight:960;letter-spacing:.13em;text-transform:uppercase}h2{margin-bottom:14px;font-size:clamp(2.2rem,5vw,4.7rem);line-height:1.04}h3{margin-bottom:9px;font-size:clamp(1.23rem,2.1vw,1.68rem);line-height:1.24}.section-head>p:last-child{color:var(--muted);font-size:clamp(1.02rem,1.7vw,1.2rem)}
+    .thesis{padding:clamp(30px,6vw,62px);border:3px solid var(--ink);border-radius:34px;background:var(--night);color:white;box-shadow:12px 12px 0 var(--amber);text-align:center}.thesis p{margin:0;font-size:clamp(1.42rem,3.2vw,2.78rem);font-weight:910;line-height:1.4}.thesis em{color:var(--amber);font-style:normal}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.split{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:28px;align-items:center}.card{padding:23px;border:2px solid var(--ink);border-radius:20px;background:var(--cream);box-shadow:5px 5px 0 rgba(31,17,42,.12)}.card p:last-child{margin:0;color:var(--muted)}.card.amber{box-shadow:6px 6px 0 var(--amber)}.card.rose{box-shadow:6px 6px 0 var(--rose)}.card.teal{box-shadow:6px 6px 0 var(--teal)}.card.berry{box-shadow:6px 6px 0 var(--berry)}.mini{display:block;margin-bottom:9px;color:var(--berry);font-size:.72rem;font-weight:960;letter-spacing:.12em}.image-panel{overflow:hidden;margin:0;border:3px solid var(--ink);border-radius:28px;background:white;box-shadow:var(--shadow)}.image-panel img{width:100%;aspect-ratio:3/2;object-fit:cover}.image-panel figcaption{padding:13px 17px;border-top:2px solid var(--ink);background:#fffdf8;color:var(--muted);font-size:.82rem}.mt{margin-top:24px}.mt2{margin-top:38px}.note,.caution,.history,.health{margin-top:24px;padding:21px 23px;border-radius:17px}.note{border:2px solid var(--teal);background:#e8f6f2}.caution{border:2px solid var(--rose);background:#fff0ef}.history{border:2px solid var(--amber);background:#fff1d1}.health{border:2px solid var(--ink);background:var(--night);color:white}.note b,.caution b,.history b,.health b{display:block;margin-bottom:6px}.quote{padding:28px;border:2px solid var(--ink);border-radius:25px;background:var(--plum);color:white;box-shadow:8px 8px 0 var(--amber)}.quote p:last-child{margin:0}.quote strong{color:#ffd076}.table-wrap{overflow-x:auto;border:2px solid var(--ink);border-radius:20px;background:white}table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:15px 17px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f3e4cf;font-size:.78rem;letter-spacing:.07em}tr:last-child td{border-bottom:0}.steps{counter-reset:step;display:grid;gap:13px}.step{position:relative;padding:20px 20px 20px 74px;border:2px solid var(--ink);border-radius:18px;background:white}.step:before{counter-increment:step;content:counter(step);position:absolute;left:18px;top:18px;display:grid;width:38px;height:38px;place-items:center;border:2px solid var(--ink);border-radius:50%;background:var(--amber);font-weight:950}.step p:last-child{margin:0;color:var(--muted)}details{border:2px solid var(--ink);border-radius:16px;background:white}details+details{margin-top:10px}summary{padding:17px 20px;cursor:pointer;font-weight:900}details>div{padding:0 20px 19px;color:var(--muted)}.pill-row{display:flex;flex-wrap:wrap;gap:9px}.pill{padding:7px 12px;border:2px solid var(--ink);border-radius:999px;background:white;font-size:.82rem;font-weight:850}.listen{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}.listen .arrow{font-size:2rem;font-weight:950;color:var(--berry)}.refs{columns:2;column-gap:35px}.refs li{break-inside:avoid;margin-bottom:12px}.footer{padding:58px 0 80px;background:var(--night);color:white}.footer .wrap{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.footer p{max-width:720px;color:#d8d1df}.footer a{color:#ffd076}
+    @media(max-width:860px){.grid-4,.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}.shade{background:linear-gradient(90deg,rgba(255,248,233,.97),rgba(255,248,233,.88) 72%,rgba(255,248,233,.25))}.hero>img{object-position:61% center}.refs{columns:1}.footer .wrap{display:block}}
+    @media(max-width:580px){.wrap{width:min(100% - 24px,1180px)}.hero{min-height:89svh}.hero h1{font-size:3.55rem}.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.listen{grid-template-columns:1fr}.listen .arrow{transform:rotate(90deg);justify-self:center}.button{width:100%}.card{padding:19px}.image-panel{border-radius:20px}.footer .button{margin-top:14px}.hero>img{object-position:67% center}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header class="hero" id="top">
+    <img src="assets/rnb-vocal-eli5/hero.webp" alt="마이크 앞의 가상 R&B 보컬과 그루브, 멜로디, 화음, 응답의 리본을 함께 표현한 생성 일러스트">
+    <div class="shade"></div>
+    <div class="wrap hero-content">
+      <span class="badge">ELI5 · 근거 중심 완전 가이드</span>
+      <h1>R&amp;B <span>보컬 지도</span></h1>
+      <p class="lead">R&amp;B는 <mark>런을 많이 넣는 창법</mark>이 아니에요. 역사, 시간, 멜로디·화성, 음색, 이야기와 관계를 한 곡 안에서 움직이는 음악 언어예요.</p>
+      <div class="actions"><a class="button" href="#answer">한 문장부터</a><a class="button alt" href="rnb-vocal-scientific-explanation.md">과학 상세 문서</a></div>
+    </div>
+    <span class="credit">AI 생성 교육 삽화 · 실제 인물·측정 자료 아님</span>
+  </header>
+
+  <nav class="nav" aria-label="페이지 목차"><div class="wrap">
+    <a href="#answer">정의</a><a href="#history">계보</a><a href="#lenses">네 렌즈</a><a href="#groove">그루브</a><a href="#phrasing">프레이징</a><a href="#runs">런</a><a href="#response">응답·화음</a><a href="#timbre">음색</a><a href="#studio">스튜디오</a><a href="#practice">연습</a><a href="#health">건강</a><a href="#evidence">근거</a>
+  </div></nav>
+
+  <main>
+    <section id="answer"><div class="wrap">
+      <div class="section-head"><p class="kicker">00 · 먼저 결론</p><h2>목소리 하나로 만드는 작은 앙상블</h2><p>보컬은 비트 위의 장식이 아니라 드럼·베이스·화음·가사·청중과 관계를 맺는 연주자입니다.</p></div>
+      <div class="thesis"><p>R&amp;B 보컬은 흑인 미국 음악의 역사 속에서 발전한 <em>시간·말·멜로디·음색·응답·제작의 예술</em>이에요.</p></div>
+      <div class="grid-4 mt2">
+        <article class="card amber"><span class="mini">TIME</span><h3>시간</h3><p>박, 분할, 싱코페이션, 자음·모음·쉼의 배치</p></article>
+        <article class="card teal"><span class="mini">PITCH</span><h3>멜로디·화성</h3><p>뼈대, 코드톤, 굴절, 런의 방향과 착지</p></article>
+        <article class="card rose"><span class="mini">TEXTURE</span><h3>음색</h3><p>기식·밀도·밝기·성구·비브라토·거친 효과</p></article>
+        <article class="card berry"><span class="mini">STORY</span><h3>이야기·관계</h3><p>화자, 가사, 콜 앤드 리스폰스, 청중과 앙상블</p></article>
+      </div>
+      <div class="caution"><b>처음부터 붙이는 연구 경계</b>R&amp;B 가수만을 대상으로 실제 곡 속 발성·프레이징을 장기간 연구한 자료는 드뭅니다. 이 가이드는 역사·음악학 자료와 일반 그루브, CCM·재즈·가창 연구를 연결하되 서로 같은 수준의 직접 근거인 것처럼 말하지 않습니다.</div>
+    </div></section>
+
+    <section id="history"><div class="wrap">
+      <div class="section-head"><p class="kicker">01 · 변하는 우산</p><h2>R&amp;B는 한 시대의 한 소리가 아니에요</h2><p>이름, 산업, 공동체, 녹음 기술과 주변 장르가 바뀌며 계속 새로운 뜻을 얻었습니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/lineage.webp" loading="lazy" alt="공동체 노래와 블루스·재즈에서 초기 R&B, 소울·펑크, 멀티트랙·샘플러, 현대 녹음으로 이어지는 생성 콜라주"><figcaption>계보를 서로 섞이는 강줄기로 표현한 생성 비유입니다. 실제 역사 사진이나 모든 하위 장르를 빠짐없이 재현한 연표가 아닙니다.</figcaption></figure>
+      <div class="grid-3 mt">
+        <article class="card"><h3>1940년대의 이름</h3><p>미국 음반 산업에서 흑인 대중음악을 가리키는 새 상업 명칭으로 등장했습니다. 이전의 인종차별적 분류어를 대체하는 과정이었습니다.</p></article>
+        <article class="card"><h3>서로 얽힌 뿌리</h3><p>블루스, 재즈, 가스펠, 보컬 그룹, 부기우기와 강한 백비트가 전후 도시 문화 속에서 관계를 맺었습니다.</p></article>
+        <article class="card"><h3>계속 움직이는 현재</h3><p>소울·펑크·힙합·팝·전자 제작과 교류하며 컨템퍼러리 R&amp;B, 네오 소울, 대안적 R&amp;B 등으로 넓어졌습니다.</p></article>
+      </div>
+      <div class="history"><b>기술보다 계보를 먼저 듣기</b>콜 앤드 리스폰스, 변주, 블루스적 굴절, 가스펠의 에너지는 맥락 없는 효과음이 아닙니다. 여러 시대의 밴드·보컬 그룹·가사·공동체와 제작 방식을 함께 들을 때 모방이 학습으로 바뀝니다.</div>
+      <p class="mt"><a href="https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues/">Library of Congress · Rhythm and Blues</a> · <a href="https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues">Smithsonian Folklife · A History of Rhythm and Blues</a></p>
+    </div></section>
+
+    <section id="lenses"><div class="wrap">
+      <div class="section-head"><p class="kicker">02 · 한 테이크를 네 번 듣기</p><h2>“잘했다”를 네 질문으로 바꿔요</h2><p>한 번에 전부 고치지 말고, 같은 녹음을 서로 다른 귀로 듣습니다.</p></div>
+      <div class="table-wrap"><table><thead><tr><th>렌즈</th><th>먼저 들을 것</th><th>진단 질문</th><th>바꿀 수 있는 변수</th></tr></thead><tbody>
+        <tr><td><strong>시간</strong></td><td>큰 박, 분할, 시작·끝</td><td>프레이즈가 어느 박을 향하나?</td><td>자음, 모음 중심, 길이, 쉼</td></tr>
+        <tr><td><strong>멜로디·화성</strong></td><td>뼈대음, 긴장과 착지</td><td>꾸밈을 빼도 방향이 들리나?</td><td>목표음, 접근음, 코드톤, 윤곽</td></tr>
+        <tr><td><strong>음색</strong></td><td>밀도, 밝기, 성구, 비브라토</td><td>같은 색이 곡 전체를 덮나?</td><td>접근 방식, 모음, 음량, 전환</td></tr>
+        <tr><td><strong>이야기·관계</strong></td><td>강세, 상대, 응답, 공간</td><td>누가 누구에게 왜 말하나?</td><td>말의 강세, 대비, 코러스, 침묵</td></tr>
+      </tbody></table></div>
+      <div class="note"><b>좋은 순서</b>첫 청취에서는 메모하지 않고 음악을 느낍니다. 다음 네 번은 렌즈 하나씩만 사용합니다. 마지막에 “지금 곡에 가장 큰 영향을 주는 한 변수”를 골라 다시 녹음합니다.</div>
+    </div></section>
+
+    <section id="groove"><div class="wrap">
+      <div class="section-head"><p class="kicker">03 · 박 안의 관계</p><h2>그루브는 “항상 늦게”가 아니에요</h2><p>기준이 들려야 앞·뒤·정박의 선택도 의미가 생깁니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/groove.webp" loading="lazy" alt="규칙적인 드럼과 베이스의 빛나는 기준점 위로 보컬 리본의 시작과 길이, 쉼이 다양하게 놓인 생성 모식도"><figcaption>안정된 기준과 유연한 프레이즈의 관계를 나타낸 비유입니다. 실제 가수의 밀리초 타이밍 측정값이 아닙니다.</figcaption></figure>
+      <div class="grid-3 mt">
+        <article class="card amber"><h3>큰 박</h3><p>마디의 시작, 2·4의 백비트, 다음 구간으로 향하는 박을 몸으로 유지합니다.</p></article>
+        <article class="card teal"><h3>분할</h3><p>8분·16분, 셔플·트리플릿 감각 속에서 짧은 음절의 언어를 통일합니다.</p></article>
+        <article class="card rose"><h3>미세 배치</h3><p>자음 공격, 모음이 들리는 중심, 강세, 피치 착지와 끝을 따로 움직입니다.</p></article>
+      </div>
+      <div class="split mt2">
+        <div><h3>한 음절도 하나의 점이 아니에요</h3><ul><li>자음이 먼저 튀어나오는 순간</li><li>모음과 음높이가 인식되는 순간</li><li>소리가 가장 강하게 들리는 순간</li><li>스쿱이 목표음에 닿는 순간</li><li>다음 음절로 넘어가거나 끊기는 순간</li></ul></div>
+        <div class="quote"><p>“뒤로 불러”를 이렇게 바꾸세요.</p><p><strong>“어느 사건을, 어느 악기 기준에서, 얼마나, 어떤 효과를 위해 옮길까?”</strong></p></div>
+      </div>
+      <div class="note"><b>실험 근거의 범위</b>네 음악가의 멜로디 연구와 합성 멜로디·펑크 드럼 청취 연구에서는 안정된 박, 사건 밀도와 적당한 싱코페이션이 그루브 평가에 관여했습니다. 미세 타이밍 편차 하나가 그루브의 보편 비법이라는 결과는 아닙니다. <a href="https://doi.org/10.3389/fpsyg.2014.00894">Madison &amp; Sioros, 2014</a> · <a href="https://doi.org/10.1371/journal.pone.0094446">Witek et al., 2014</a></div>
+    </div></section>
+
+    <section id="phrasing"><div class="wrap">
+      <div class="section-head"><p class="kicker">04 · 말이 멜로디가 되는 곳</p><h2>프레이징은 가사의 카메라 워크예요</h2><p>어떤 단어를 가까이 보여 주고, 어디서 멈추고, 무엇을 숨길지 결정합니다.</p></div>
+      <div class="steps">
+        <article class="step"><div><h3>말로 장면 만들기</h3><p>화자와 상대, 직설인지 망설임인지, 문장 속 가장 중요한 단어를 정합니다.</p></div></article>
+        <article class="step"><div><h3>음정 없이 리듬 말하기</h3><p>기능어는 가볍게, 의미어는 강세·길이·공간으로 드러내며 드럼과 베이스에 맞춥니다.</p></div></article>
+        <article class="step"><div><h3>꾸밈 없는 멜로디</h3><p>핵심음과 가사가 분명한지 확인합니다. 여기서 불분명하면 런이 해결해 주지 않습니다.</p></div></article>
+        <article class="step"><div><h3>길이와 침묵</h3><p>어느 모음을 남길지, 어디서 잘라 악기와 코러스가 말하게 할지 정합니다.</p></div></article>
+        <article class="step"><div><h3>음색과 장식</h3><p>이미 전달되는 문장에 필요한 만큼만 스쿱, 폴, 비브라토, 런을 더합니다.</p></div></article>
+      </div>
+      <div class="caution"><b>영어 녹음의 리듬을 한국어에 그대로 붙이지 않기</b>영어의 어휘 강세·약화 모음과 한국어의 음절 구조·조사·어미·문장 억양은 다릅니다. 핵심 의미가 있는 음절, 받침이 들리는 시점, 긴 모음 뒤 단어 경계를 별도로 확인하세요.</div>
+    </div></section>
+
+    <section id="runs"><div class="wrap">
+      <div class="section-head"><p class="kicker">05 · 런의 해부</p><h2>빠른 음보다 먼저, 뼈대와 착지를 봐요</h2><p>런은 음정, 리듬, 모음, 방향, 강세와 화성 착지가 결합된 작은 작곡입니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/run-anatomy.webp" loading="lazy" alt="큰 목표 구슬 사이에 작은 동기 구슬과 방향 전환이 이어져 마지막 화성 목표에 착지하는 생성 모식도"><figcaption>큰 구슬은 멜로디 뼈대와 착지, 작은 구슬은 동기 셀과 장식을 비유합니다. 실제 음정·리듬을 기록한 악보가 아닙니다.</figcaption></figure>
+      <div class="pill-row mt"><span class="pill">출발음</span><span class="pill">윤곽</span><span class="pill">방향 전환</span><span class="pill">2–4음 셀</span><span class="pill">분할</span><span class="pill">강세</span><span class="pill">모음·자음</span><span class="pill">화성 착지</span></div>
+      <div class="grid-2 mt2">
+        <article class="card teal"><h3>먼저 지킬 것</h3><ul><li>첫 음, 방향 전환점, 마지막 음</li><li>원래 분할과 강세의 비율</li><li>착지 박과 다음 가사의 공간</li><li>한 모음에서의 매끄러운 연결</li></ul></article>
+        <article class="card rose"><h3>나중에 더할 것</h3><ul><li>실제 가사의 자음과 모음 이동</li><li>속도와 음색 대비</li><li>다른 조·박 위치의 변형</li><li>곡 전체에서의 밀도와 의미</li></ul></article>
+      </div>
+      <div class="steps mt2">
+        <article class="step"><div><h3>리듬만 말하기</h3><p>음높이를 빼고 시작·끝 박과 강세를 몸에 넣습니다.</p></div></article>
+        <article class="step"><div><h3>뼈대만 부르기</h3><p>첫 음, 방향 전환점, 목표음만 남겨 화성 방향을 확인합니다.</p></div></article>
+        <article class="step"><div><h3>작은 셀로 나누기</h3><p>2–4음 단위로 정확히 만든 뒤 셀 사이를 겹쳐 연결합니다.</p></div></article>
+        <article class="step"><div><h3>느려도 같은 리듬</h3><p>음 사이를 막연히 늘이지 말고 분할과 강세의 비율을 유지합니다.</p></div></article>
+        <article class="step"><div><h3>가사·키·곡으로 전이</h3><p>한 모음에서 실제 가사, 다른 조, 원 템포와 앞뒤 문장으로 옮깁니다.</p></div></article>
+      </div>
+      <div class="note"><b>귀 훈련만으로 충분하지 않아요</b>비음악가의 미세 멜로디 판별은 훈련 뒤 좋아졌지만 가창 정확도가 함께 유의하게 좋아지지는 않았습니다. 듣기와 발성 운동 매핑을 함께 연습해야 한다는 단서입니다. <a href="https://doi.org/10.1371/journal.pone.0011181">Zarate et al., 2010</a></div>
+    </div></section>
+
+    <section id="response"><div class="wrap">
+      <div class="section-head"><p class="kicker">06 · 혼자 불러도 대화하기</p><h2>애드리브와 화음은 곡의 건축이에요</h2><p>좋은 아웃트로는 음을 계속 추가하는 것이 아니라, 이미 나온 재료를 기억하고 변형하며 공간을 배분합니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/call-response.webp" loading="lazy" alt="리드 보컬의 짧은 제스처에 백업 보컬의 여러 화음 리본과 청중이 응답하며 밀도가 커지는 생성 일러스트"><figcaption>질문–응답, 반복 동기의 변형, 구간별 밀도 증가를 한 화면에 겹친 비유입니다. 특정 공연이나 종교 의식을 재현한 장면이 아닙니다.</figcaption></figure>
+      <div class="grid-3 mt">
+        <article class="card"><h3>동기</h3><p>본 멜로디의 작은 리듬·음정 조각을 기억해 끝음, 길이, 시작 위치를 바꿉니다.</p></article>
+        <article class="card"><h3>대화</h3><p>리드, 백업, 악기, 청중이 같은 공간을 차지하지 않고 질문과 답을 나눕니다.</p></article>
+        <article class="card"><h3>구간</h3><p>벌스는 비우고, 훅은 모으고, 브리지는 대비하고, 아웃트로는 선택적으로 확장합니다.</p></article>
+      </div>
+      <div class="table-wrap mt"><table><thead><tr><th>보컬 층</th><th>주된 역할</th><th>맞춰 볼 것</th></tr></thead><tbody>
+        <tr><td><strong>리드</strong></td><td>가사와 서사의 중심</td><td>강세, 프레이즈 방향, 친밀도</td></tr>
+        <tr><td><strong>더블·유니즌</strong></td><td>두께와 리듬 선명도</td><td>자음 시작, 모음 길이, 끝음</td></tr>
+        <tr><td><strong>화음</strong></td><td>코드 색과 진행</td><td>목표음, 보이싱, 음량, 비브라토</td></tr>
+        <tr><td><strong>응답·카운터라인</strong></td><td>대화와 상승 에너지</td><td>리드가 비운 공간, 동기 재사용</td></tr>
+      </tbody></table></div>
+      <div class="history"><b>스튜디오의 ‘집단’도 연주예요</b>1970–1990년 흑인 대중음악 제작을 분석한 연구는 한 사람이 여러 파트를 오버더빙해 콜 앤드 리스폰스와 리듬 대화를 만드는 관행을 보여 줍니다. 녹음된 합창은 반드시 한 번의 집단 라이브 테이크가 아닙니다. <a href="https://academicworks.cuny.edu/gc_etds/2012/">Fulton, 2017</a></div>
+    </div></section>
+
+    <section id="timbre"><div class="wrap">
+      <div class="section-head"><p class="kicker">07 · 한 사람, 여러 표면</p><h2>‘R&amp;B 세팅’ 하나 대신 음색 팔레트</h2><p>기식, 밀도, 밝기, 팔세토, 비브라토와 거친 효과는 곡의 관점에 맞춰 고르는 색입니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/timbre-palette.webp" loading="lazy" alt="동일한 가상 보컬이 투명한 기식 리본, 중심 있는 음색, 밝은 음색, 팔세토, 비브라토와 거친 질감을 탐색하는 생성 콜라주"><figcaption>한 사람이 여러 청각 목표를 선택하는 모습을 겹친 생성 비유입니다. 각 색이 단일 근육 설정이나 안전도를 뜻하지 않습니다.</figcaption></figure>
+      <div class="grid-3 mt">
+        <article class="card amber"><h3>성구</h3><p>체스트·헤드·믹스·팔세토는 유용한 교육어지만 연구 용어와 경계가 항상 같지는 않습니다. 전환을 숨기는 것과 드러내는 것 모두 선택입니다.</p></article>
+        <article class="card teal"><h3>비브라토</h3><p>시작 시점, 속도, 폭, 규칙성과 끝에서의 변화가 따로 움직입니다. 특정 숫자 하나를 건강한 R&amp;B 표준으로 삼을 수 없습니다.</p></article>
+        <article class="card rose"><h3>거친 효과</h3><p>거칠게 들린다고 바로 병변은 아니지만, 원하는 소리가 났다고 안전이 증명되는 것도 아닙니다. 통증을 참고 독학하지 않습니다.</p></article>
+      </div>
+      <div class="caution"><b>한 사람 연구를 장르 법칙으로 만들지 않기</b>한 전문 가수의 클래식·팝·재즈·블루스 음원을 비교한 실험은 목표에 따라 음원 사용이 바뀔 수 있음을 보여 주지만, “블루스는 언제나 압착” 같은 보편 규칙은 증명하지 않습니다. <a href="https://doi.org/10.1080/140154301753207458">Thalén &amp; Sundberg, 2001</a></div>
+      <p class="mt">발성 메커니즘은 <a href="phonation-eli5.html">발성 시각 가이드</a>, 높은 음의 조절은 <a href="high-note-eli5.html">고음 시각 가이드</a>, 밝고 관통하는 음색은 <a href="twang-eli5.html">트왱 시각 가이드</a>에서 더 자세히 볼 수 있습니다.</p>
+    </div></section>
+
+    <section id="studio"><div class="wrap">
+      <div class="section-head"><p class="kicker">08 · 매체가 악기가 된다</p><h2>마이크와 스튜디오도 보컬 테크닉이에요</h2><p>녹음된 목소리는 성대만의 출력이 아니라 거리, 모니터, 레이어와 편집이 함께 만든 결과입니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/studio.webp" loading="lazy" alt="가상 보컬의 리드, 더블, 옥타브, 화음과 응답이 여러 색 리본으로 쌓여 하나의 녹음이 되는 생성 일러스트"><figcaption>멀티트랙 제작과 모니터링을 표현한 생성 비유입니다. 실제 DAW 화면이나 특정 음반의 세션 자료가 아닙니다.</figcaption></figure>
+      <div class="grid-2 mt">
+        <article class="card teal"><h3>마이크 거리·각도</h3><p>방향성 마이크의 가까운 거리는 저음 비율, 숨, 파열음과 친밀감을 바꿀 수 있습니다. “주먹 한 개”는 시작점이지 보편 정답이 아닙니다.</p></article>
+        <article class="card amber"><h3>모니터</h3><p>내 목소리를 적게 들으면 소음에 맞서 더 크게 내는 롬바르드 반응이 생길 수 있습니다. 기술 실패처럼 느껴질 때 모니터와 리버브를 함께 점검합니다.</p></article>
+        <article class="card rose"><h3>레이어·컴핑</h3><p>여러 테이크의 장점, 더블, 옥타브, 화음과 카운터라인을 역할별로 배치합니다. 리드 한 줄을 먼저 명확히 만드는 편이 좋습니다.</p></article>
+        <article class="card berry"><h3>피치·타임 편집</h3><p>투명한 교정과 일부러 들리는 효과는 서로 다른 제작 선택입니다. 사용 여부만으로 보컬의 음악성이나 진실성을 판정할 수 없습니다.</p></article>
+      </div>
+      <div class="listen mt2">
+        <article class="card"><h3>스튜디오</h3><p>다중 테이크, 근접 마이크, 레이어, 자동화와 세밀한 편집</p></article><span class="arrow" aria-hidden="true">↔</span><article class="card"><h3>라이브</h3><p>한 번에 이어지는 호흡, 무대 소음, 실제 인원, 세트 전체의 부하와 청중 응답</p></article>
+      </div>
+      <div class="note"><b>작은 가창 실험의 단서</b>고전 훈련자 10명과 비전문가 10명의 연구에서는 외부 자기 피드백이 커질 때 발성 음압이 낮아졌고 비전문가의 롬바르드 효과가 더 컸습니다. 특정 곡·작은 표본이므로 무대 처방값이 아니라 모니터의 중요성을 보여 주는 단서입니다. <a href="https://doi.org/10.1016/j.jvoice.2015.05.010">Bottalico et al., 2016</a></div>
+    </div></section>
+
+    <section id="practice"><div class="wrap">
+      <div class="section-head"><p class="kicker">09 · 일곱 작업대</p><h2>한 번에 한두 변수, 곡까지 연결하기</h2><p>연습은 예쁜 소리를 우연히 찾는 시간이 아니라, 의도한 관계를 반복 가능하게 만드는 작은 실험입니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/practice-lab.webp" loading="lazy" alt="같은 가상 보컬이 듣기, 기록, 리듬 말하기, 멜로디·런, 음색 선택, 녹음, 휴식 뒤 재검사를 순환하는 생성 일러스트"><figcaption>연습의 순환을 표현한 생성 비유입니다. 단계별 고정 시간이나 모든 사람에게 같은 훈련량을 처방하는 그림이 아닙니다.</figcaption></figure>
+      <div class="grid-4 mt">
+        <article class="card"><span class="mini">01</span><h3>계보·듣기</h3><p>가수뿐 아니라 시대, 드럼, 베이스, 코러스와 제작을 기록합니다.</p></article>
+        <article class="card"><span class="mini">02</span><h3>말·리듬</h3><p>가사를 말하고 한 음으로 부르며 자음·모음·쉼을 놓습니다.</p></article>
+        <article class="card"><span class="mini">03</span><h3>뼈대·화성</h3><p>꾸밈 없는 선율, 코드톤, 긴장음과 목표 착지를 확인합니다.</p></article>
+        <article class="card"><span class="mini">04</span><h3>런·즉흥</h3><p>작은 동기를 변형하고 넣는 버전과 빼는 버전을 비교합니다.</p></article>
+        <article class="card"><span class="mini">05</span><h3>음색·성구</h3><p>같은 음·가사를 여러 질감으로 부르며 음량까지 바뀌었는지 듣습니다.</p></article>
+        <article class="card"><span class="mini">06</span><h3>마이크·레이어</h3><p>거리·각도·게인을 하나씩 바꾸고 각 보컬 층의 역할을 정합니다.</p></article>
+        <article class="card"><span class="mini">07</span><h3>곡·공연 전이</h3><p>원 키·템포·가사·자세·움직임과 세트 순서 속에서 재현합니다.</p></article>
+        <article class="card amber"><span class="mini">RULE</span><h3>다음 날 확인</h3><p>즉시 결과만 아니라 말소리, 음역, 피로와 실제 곡 전이를 봅니다.</p></article>
+      </div>
+      <div class="grid-3 mt2">
+        <article class="card teal"><h3>지금</h3><p>더 정확하고 의도에 가깝고 비교적 편한가?</p></article>
+        <article class="card amber"><h3>다음 날</h3><p>말소리·고음·노력감이 평소 상태로 회복됐는가?</p></article>
+        <article class="card rose"><h3>실전</h3><p>반주·가사·마이크·움직임 속에서도 재현되는가?</p></article>
+      </div>
+    </div></section>
+
+    <section id="health"><div class="wrap">
+      <div class="section-head"><p class="kicker">10 · 부하와 회복</p><h2>멋있는 질감과 건강 신호를 섞지 마세요</h2><p>듣기 좋은 거침, 기식, 강한 소리도 조직 상태를 말해 주지 않습니다. 몸의 기능 변화는 별도로 봅니다.</p></div>
+      <figure class="image-panel"><img src="assets/rnb-vocal-eli5/health-recovery.webp" loading="lazy" alt="가상 보컬이 관리 가능한 부하로 노래하고, 수분과 수면으로 쉬며, 지속 신호가 있을 때 음성 전문가와 상의하는 생성 일러스트"><figcaption>부하–회복–전문 평가의 의사결정을 단순화한 생성 그림입니다. 실제 후두 영상이나 개인 진단이 아닙니다.</figcaption></figure>
+      <div class="grid-2 mt">
+        <article class="card teal"><span class="mini">RECOVER</span><h3>부하를 줄이고 회복 보기</h3><ul><li>수분·수면과 조용한 회복 시간</li><li>쉰 상태·피곤한 상태에서 강행하지 않기</li><li>무대 소음·모니터·말 사용량까지 기록</li><li>다음 날 말소리와 원래 되던 음역 확인</li></ul></article>
+        <article class="card rose"><span class="mini">EVALUATE</span><h3>평가가 필요한 신호</h3><ul><li>평소 되던 고음의 갑작스러운 소실</li><li>반복되거나 지속되는 쉰 말소리</li><li>통증, 과도한 힘, 갑작스러운 큰 변화</li><li>호흡 곤란, 피 섞임 등 심각 신호</li></ul></article>
+      </div>
+      <div class="health"><b>4주는 기다리라는 명령이 아니에요</b>AAO-HNS는 쉰 목소리가 4주 안에 호전되지 않으면 후두경 검사 또는 의뢰를 권하고, 심각한 원인이 의심되면 더 빨리 평가하도록 합니다. 갑작스러운 심한 변화나 호흡 문제는 즉시 지역 의료체계에서 판단받아야 합니다. <a href="https://www.entnet.org/resource/aao37-dysphonia-laryngeal-examination-2026/">AAO-HNS 2026</a></div>
+      <p class="mt"><a href="https://www.nidcd.nih.gov/health/taking-care-your-voice">NIDCD 음성 관리 지침</a>은 수분·휴식, 소음 속 과도한 발성 줄이기, 쉰 상태나 피곤한 상태에서 무리하지 않기를 안내합니다.</p>
+    </div></section>
+
+    <section id="myths"><div class="wrap">
+      <div class="section-head"><p class="kicker">11 · 짧은 오해 교정</p><h2>외우기 쉬운 말일수록 경계를 붙여요</h2><p>교육 문장은 행동을 돕되 역사와 과학을 한 줄로 과장하지 않아야 합니다.</p></div>
+      <details open><summary>R&amp;B는 런을 많이 넣으면 되나요?</summary><div>아니요. 런은 시간·화성·가사·응답을 조직하는 선택 중 하나입니다. 뼈대, 그루브, 이야기와 공간이 먼저입니다.</div></details>
+      <details><summary>항상 박자 뒤에 불러야 소울풀한가요?</summary><div>아니요. 기준 박과 분할이 먼저이며 자음, 모음 중심, 강세, 끝음의 배치는 곡과 악기 관계에 따라 달라집니다.</div></details>
+      <details><summary>체스트는 진짜 목소리이고 팔세토는 가짜인가요?</summary><div>아니요. 서로 다른 음색·성구 전략입니다. 친밀감, 대비, 음역과 곡의 관점에 따라 선택할 수 있습니다.</div></details>
+      <details><summary>편하면 무조건 안전한가요?</summary><div>주관적 편안함, 음향 효율, 장르적 성공, 조직 상태는 서로 다른 질문입니다. 반복 뒤 회복과 지속 증상을 별도로 봅니다.</div></details>
+      <details><summary>음반과 똑같이 못 부르면 실력이 부족한가요?</summary><div>음반은 마이크, 다중 테이크, 레이어, 자동화와 편집으로 만든 매체입니다. 라이브에서는 같은 의도를 다른 편곡과 자원으로 번역합니다.</div></details>
+    </div></section>
+
+    <section id="evidence"><div class="wrap">
+      <div class="section-head"><p class="kicker">12 · 합의와 빈칸</p><h2>확실한 것과 빌려 온 단서를 구분해요</h2><p>R&amp;B 보컬 연구의 가장 큰 문제는 장르 이름을 붙인 직접 실험이 적다는 점입니다.</p></div>
+      <div class="grid-2">
+        <article class="card teal"><span class="mini">ROBUST FRAME</span><h3>비교적 단단한 큰 그림</h3><ul><li>R&amp;B는 흑인 미국 음악사에서 형성된 변화하는 범주다.</li><li>그루브는 박·분할·싱코페이션과 관계한다.</li><li>가창 정확도는 듣기와 운동 제어를 함께 필요로 한다.</li><li>마이크·모니터·레이어·편집이 결과를 바꾼다.</li><li>지속 증상은 미학이 아니라 평가 문제다.</li></ul></article>
+        <article class="card rose"><span class="mini">OPEN QUESTIONS</span><h3>아직 크게 비어 있는 것</h3><ul><li>실제 R&amp;B 곡 속 언어별 프레이징 대규모 분석</li><li>런의 리듬·피치·조음을 함께 다룬 훈련시험</li><li>음색 효과의 실제 공연 용량과 장기 건강</li><li>인이어·마이크·춤이 부하에 미치는 상호작용</li><li>한국어 R&amp;B의 언어 리듬과 계보의 만남</li></ul></article>
+      </div>
+      <div class="table-wrap mt"><table><thead><tr><th>자료</th><th>잘 답하는 질문</th><th>그대로 답하지 못하는 것</th></tr></thead><tbody>
+        <tr><td><strong>역사 아카이브</strong></td><td>명칭, 계보, 공동체·산업 맥락</td><td>개인의 최적 성대 설정</td></tr>
+        <tr><td><strong>음악학·문화연구</strong></td><td>제작, 정체성, 미학과 의미</td><td>조직 안전성의 인과관계</td></tr>
+        <tr><td><strong>그루브 청취 실험</strong></td><td>특정 자극의 움직임·즐거움 평가</td><td>R&amp;B 가수의 보편 미세 타이밍</td></tr>
+        <tr><td><strong>가창 실험</strong></td><td>정해진 과제의 음정·음압·음원</td><td>완성 곡의 이야기와 장기 전이</td></tr>
+        <tr><td><strong>임상 지침</strong></td><td>평가 시점과 건강 의사결정</td><td>장르적 음색의 우열</td></tr>
+      </tbody></table></div>
+      <div class="quote mt2"><p>논문을 읽을 때:</p><p><strong>누가 · 어떤 곡이나 과제를 · 어떤 환경에서 · 무엇으로 측정했으며 · R&amp;B까지의 연결 거리는 얼마인지</strong> 적으세요.</p></div>
+    </div></section>
+
+    <section id="references"><div class="wrap">
+      <div class="section-head"><p class="kicker">13 · 직접 확인하기</p><h2>이 가이드의 핵심 출처</h2><p>전체 참고문헌, 표본과 과제의 한계는 과학 상세 문서에 정리했습니다.</p></div>
+      <ol class="refs">
+        <li><a href="https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues/">Library of Congress · Rhythm and Blues</a></li>
+        <li><a href="https://www.si.edu/spotlight/african-american-music/roots-of-african-american-music">Smithsonian · Roots of African American Music</a></li>
+        <li><a href="https://doi.org/10.3389/fpsyg.2014.00894">Madison &amp; Sioros, 2014 · musicians and groove</a></li>
+        <li><a href="https://doi.org/10.1371/journal.pone.0094446">Witek et al., 2014 · syncopation, movement, pleasure</a></li>
+        <li><a href="https://doi.org/10.1371/journal.pone.0011181">Zarate et al., 2010 · pitch perception and singing</a></li>
+        <li><a href="https://doi.org/10.1016/j.jvoice.2016.01.012">Bottalico et al., 2017 · singing pitch inaccuracy</a></li>
+        <li><a href="https://doi.org/10.1080/140154301753207458">Thalén &amp; Sundberg, 2001 · one singer, four styles</a></li>
+        <li><a href="https://doi.org/10.1016/j.jvoice.2023.11.020">Acosta Martínez &amp; Daffern · jazz/opera vibrato recordings</a></li>
+        <li><a href="https://doi.org/10.1016/j.jvoice.2015.05.010">Bottalico et al., 2016 · feedback, volume, quality</a></li>
+        <li><a href="https://doi.org/10.1525/jpms.2019.312008">Provenzano, 2019 · pitch correction and Auto-Tune</a></li>
+        <li><a href="https://www.nidcd.nih.gov/health/taking-care-your-voice">NIDCD · Taking Care of Your Voice</a></li>
+        <li><a href="https://www.entnet.org/resource/aao37-dysphonia-laryngeal-examination-2026/">AAO-HNS 2026 · Dysphonia—Laryngeal Examination+</a></li>
+      </ol>
+      <div class="note"><b>삽화 기록</b>이 페이지의 모든 설명용 그림은 생성 이미지이며 실제 역사 사진·인물·의료 영상·측정 그래프가 아닙니다. 정확한 생성 지시는 <a href="assets/rnb-vocal-eli5/PROMPTS.md">PROMPTS.md</a>에 보존했습니다.</div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div><h2>런보다 먼저,<br>관계를 들으세요.</h2><p>계보와 곡 이해 → 말과 그루브 → 뼈대와 화성 → 음색과 성구 → 장식·응답 → 마이크와 공연 전이 → 다음 날 회복 확인.</p><p><a href="rnb-vocal-scientific-explanation.md">R&amp;B 보컬 과학 상세 문서</a> · <a href="assets/rnb-vocal-eli5/PROMPTS.md">이미지 생성 기록</a></p></div><a class="button" href="#top">맨 위로</a></div></footer>
+
+  <script>
+    const bar=document.getElementById('progress');
+    const update=()=>{const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;bar.style.width=(max?100*h.scrollTop/max:0)+'%'};
+    addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+  </script>
+</body>
+</html>
